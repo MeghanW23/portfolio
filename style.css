@@ -42,7 +42,7 @@ nav img {
     content: '';
     width: 0%;
     height: 2px;
-    background:white;
+    background:#3333fb;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -77,4 +77,9 @@ nav img {
     background: transparent;
     position: relative;
     cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #3333fb;
+    background: #3333fb;
+    transition: 1s;
 }
