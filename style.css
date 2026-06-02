@@ -82,11 +82,19 @@ nav img {
     background: transparent;
     position: relative;
     cursor: pointer;
+    width: 130px;     
+    height: 20px;      
 }
 .hero-btn:hover{
     border: 1px solid #959597;
     background: #959597;
     transition: 1s;
+}
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;   /* spacing between buttons */
+    flex-wrap: wrap;
 }
 nav .fa{
     display: none;
