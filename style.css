@@ -232,3 +232,7 @@ h3{
     padding-left: 0px;
 
 }
+.award-col .layer {
+    position: static;
+    background: none;
+}
