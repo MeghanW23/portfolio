@@ -321,22 +321,18 @@ h3{
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
 .publications p{
     text-align: left;
 }
 .publications h1{
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 .publication-col {
-    flex-basis: 45%;
-    border-radius: 10px;
     background: #d4d4d6;
-    margin-bottom: 5%;
-    text-align: left;
+    border-radius: 10px;
     padding: 30px;
-    width: 100%;
-
+    margin-bottom: 40px;
+    text-align: left;
     display: flex;
     flex-direction: column;
 }
