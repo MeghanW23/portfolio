@@ -208,6 +208,9 @@ h3{
     padding-top: 100px;
 }
 
+.grants-and-awards h3{
+    text-align: left;
+}
 .grants-and-awards .row {
     display: flex;
     justify-content: space-between;
@@ -230,6 +233,8 @@ h3{
     flex-direction: column;
     flex-grow: 1;
     text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .award-col img {
     width: 90%;
