@@ -161,7 +161,7 @@ p{
 }
 .project-col{
     flex-basis: 48%;
-    background: #b6b6b8;
+    background: #d4d4d6;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -197,7 +197,7 @@ h3{
     }
 }
 .layer{
-    background: #b6b6b8;
+    background: #d4d4d6;
 }
 
 /* ---- Grants and awards */
@@ -216,7 +216,7 @@ h3{
 .award-col {
     flex-basis: 45%;
     border-radius: 10px;
-    background: #b6b6b8;
+    background: #d4d4d6;
     margin-bottom: 5%;
     text-align: left;
     padding: 15px;
@@ -306,4 +306,32 @@ h3{
 .button-row5 .hero-btn {
     color: black;
     border: 1px solid black;
+}
+
+/*Publications*/
+.publications{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.publications p{
+    text-align: left;
+}
+.publications h1{
+    padding-bottom: 15px;
+}
+.publication-col {
+    flex-basis: 45%;
+    border-radius: 10px;
+    background: #d4d4d6;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 30px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
