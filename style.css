@@ -73,7 +73,11 @@ nav img {
     color: white;
 }
 .hero-btn{
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
     text-decoration: none;
     color: white;
     border: 1px solid white;
@@ -83,7 +87,7 @@ nav img {
     position: relative;
     cursor: pointer;
     width: 130px;     
-    height: 20px;      
+    height: 15px;      
 }
 .hero-btn:hover{
     border: 1px solid #959597;
@@ -93,7 +97,7 @@ nav img {
 .button-row1 {
     display: flex;
     justify-content: center;
-    gap: 15px;   /* spacing between buttons */
+    gap: 30px;   /* spacing between buttons */
     flex-wrap: wrap;
 }
 nav .fa{
