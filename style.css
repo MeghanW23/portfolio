@@ -7,6 +7,7 @@
 h5 {
     font-weight: 300;
     font-size: 14px;
+    text-align: center;
 }
 /*------ home page and toggle menu -----*/
 .header{
@@ -204,12 +205,15 @@ h3{
 .grants-and-awards{
     width: 80%;
     margin: auto;
+    
     text-align: center;
     padding-top: 100px;
 }
 
 .grants-and-awards h3{
     text-align: left;
+    padding-top: 25px;
+    font-size: 25px;
 }
 .grants-and-awards .row {
     display: flex;
@@ -248,8 +252,9 @@ h3{
     margin: 15px auto;
 }
 .grants-and-awards h3{
-    font-size: 18px;
-    text-align: left;
+    font-size: 25px;
+    text-align: center;
+
 }
 .grants-and-awards p{
     font-size: 13px;
