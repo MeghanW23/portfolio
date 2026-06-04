@@ -368,3 +368,27 @@ h3{
     overflow-wrap: break-word;
   }
 }
+
+.footer{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 60px;
+}
+.footer-button-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 5px;
+}
+.footer-button-row .hero-btn {
+    color: black;
+    width: 0%;
+}
+.footer-button-row .hero-btn:hover{
+   border: 1px solid white;
+   background: white;
+}
+.hero-btn .fa {
+    font-size: 20px;  /* adjust to taste */
+}
