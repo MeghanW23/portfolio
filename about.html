@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghan Walsh | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet", href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-------- Header ------->
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="assets/logo.png"></a>
+        <div class="nav-links", id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="">fMRI MOTION CHARACTERIZATION</a></li>
+                <li><a href="">fMRI NEUROFEEDBACK</a></li>
+                <li><a href="">UNDERGRADUATE RESEARCH</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav> 
+<div class="text-box">
+    <h1>About Me</h1>
+    
+</div>
+</div>
+</section>
+<!-------- About Me Section ------->
+<section class="about-me">
+    <div class="background">
+        <div class="background-text">
+            <h3>Background</h3>
+            <p>
+                I started out in social science, drawn to understanding people. During college 
+                I worked as a substitute and preschool teacher, supporting children, typically developing and with varying learning disabilities, 
+                in classrooms at Lincoln Public Schools. In tandem, my neuroscience courses sparked an interest in the mystery of how the brain creates
+                emotion, perception, and cognition. This experiences shaped how I think about research.
+                I've always cared about what it means for the people on the other end of it.
+                <br><br>
+                My path into computational neuroscience was unexpected. As an undergraduate, I joined 
+                <a href="https://sites.bu.edu/denisonlab/" target="_blank" rel="noopener noreferrer">Dr. Rachel Dension's 
+                perceptual neuroscience lab</a> contributing to research on the decoupling between objective visual performance and 
+                subjective awareness. These were my first experiences in neuroscience research; I gained hands-on experience with MATLAB, 
+                SPSS and eye-tracking technology. I graduated magna cum laude with a BA in Psychology, 
+                and started asking bigger questions about what computers could do for brain science.
+            </p>
+            <h3>Continuing Education </h3>
+            <p>
+                After graduating from Boston University, in order to further pursue my newfound interest in mathematics and computer science,
+                I completed university-level courses in Operating Platforms and Discrete Mathematics at Southern New Hampshire University, 
+                as well as IBM-certified courses in DevOps, Cloud Computing, Agile Development, Linux Shell Scripting, and Git and GitHub. 
+            </p>
+        </div>
+        <div class="background-imgs">
+            <img src="assets/eyetracker.jpg">
+            <img src="assets/eyetracker2.jpg">
+
+        </div>
+        
+    </div>
+    <div class="current-work">
+        <div class="current-work-img1">
+            <img src="assets/eyetracker.jpg">
+        </div>
+        <div class="current-work-img2">
+            <img src="assets/eyetracker2.jpg">
+        </div>
+        <div class="current-work-text">
+            <h3>Current Work</h3>
+            <p>
+                I'm a Clinical Research Coordinator at Boston Children's Hospital's <a href="https://bchcohenlab.com/" target="_blank" rel="noopener noreferrer">
+                Laboratory of Translational Neuroimaging</a> (PI: Alexander Li Cohen), where I've spent the past three years building and 
+                deploying software tools for neuroimaging research. My work combines neuroscience and computational methods. At Boston Children's Hospital, 
+                I develop computational tools for fMRI analysis. This has included an <a href="intravolume_motion.html" target="_blank" rel="noopener noreferrer">
+                intra-volume motion characterization pipeline</a> for clinical datasets (ADHD, ASD) and a <a href="neurofeedback.html" target="_blank" rel="noopener noreferrer">
+                real-time neurofeedback pipeline</a> for individuals with ADHD, aimed at investigating the feasibility of fMRI neurofeedback as a drug-free, 
+                neuromodulatory treatment for ADHD. Through these projects, I have discovered a deep interest in applying tangible, quantitative computational 
+                methods to answer meaningful questions about human behavior and the brain. 
+                <br></br>
+                Today, I am constantly inspired by the endless possibilities of what I can create with
+                computers. Despite starting with no coding experience, working with lab projects that have
+                required extensive troubleshooting and adjustments has been both rewarding and enjoyable. Through my work at BCH, 
+                I have discovered a deep interest in applying tangible, computational methods to answer meaningful questions about 
+                the brain and develop tools with real-world, practical impact. 
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-------- Javascript for Mobile Toggle Menu ------->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
+
+<!-------- Footer ------->
+<section class="footer">
+    <h3>Contact Information</h3>
+    <p>meghan.walsh2@childrens.harvard.edu</p>
+    <p>wmeghan0809@gmail.com</p>
+    <p></p>
+    <p>+1 774 244 5591</p>
+    <div class="footer-button-row">
+        <a href="https://www.linkedin.com/in/meghan-walsh-359789260/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="hero-btn">
+            <i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/MeghanW23/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="hero-btn">
+            <i class="fa fa-github"></i></a>
+    </div>
+</section>

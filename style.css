@@ -19,7 +19,7 @@ h5 {
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/background.jpeg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/home_background.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -29,6 +29,11 @@ nav {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+
+    position: absolute;  /* add this */
+    top: 0;              /* add this */
+    width: 100%;         /* add this */
+    box-sizing: border-box; /* add this so padding doesn't overflow */
 }
 nav img {
     width: 50px;   
@@ -188,7 +193,7 @@ p{
     display: block;
     margin: 15px auto;
 }
-h3{
+.project-col h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
@@ -391,4 +396,132 @@ h3{
 }
 .hero-btn .fa {
     font-size: 20px;  /* adjust to taste */
+}
+
+/* --- About page ---- */
+.sub-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/about_background.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    object-position: top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;  /* so nav can be positioned inside it */
+
+}
+/* --- About page header ---- */
+.about-me img{
+   border-radius: 10%;
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+   padding: 6px;
+   background: white;
+   border-radius: 8px;
+   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+   display: block;
+   margin: 15px auto;
+}
+
+.about-me h3{
+    justify-items: center;
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+}
+
+/* --- About page background section ---- */
+.background {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.background-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.background-text h3{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.background-imgs {
+    display: flex;
+    gap: 40px;
+    background-color: #d4d4d6;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-top:25px;
+    border-radius: 5%;
+}
+
+.background-imgs img {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* --- About page current work section ---- */
+
+.current-work{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    
+}
+
+.current-work-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    padding-left: 50px;
+}
+
+
+.current-work-text h3{
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.current-work-img1 {
+    background-color: #d4d4d6;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-top:25px;
+    border-radius: 5%;
+    margin-left: 60px;
+}
+
+.current-work-img2 {
+    background-color: #d4d4d6;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-top:25px;
+    border-radius: 5%;
 }
