@@ -462,22 +462,35 @@ p{
     font-size: 25px;
 }
 
+.background-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #d4d4d6;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 5%;
+}
+.background-elements .hero-btn {
+    border-color: black;
+    color: black;
+    width: 50%;
+}
+
 .background-imgs {
     display: flex;
-    gap: 40px;
-    background-color: #d4d4d6;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 25px;
-    padding-top:25px;
-    border-radius: 5%;
+    gap: 25px;
+    width: 100%;
 }
 
 .background-imgs img {
     width: 50%;
     object-fit: cover;
+    border-radius: 8px;
 }
-
 /* --- About page current work section ---- */
 
 .current-work{
