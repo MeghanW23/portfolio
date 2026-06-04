@@ -442,7 +442,7 @@ p{
     align-items: center;
     gap: 50px;
     padding-right: 100px;
-    padding-left: 100px;
+    padding-left: 25px;
     padding-top: 100px;
 }
 
@@ -496,11 +496,14 @@ p{
 .current-work{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 5px;
     padding-right: 100px;
-    padding-left: 100px;
+    padding-left: 50px;
     padding-top: 50px;
     
+}
+.current-work h3{
+    padding-top: 0px;
 }
 
 .current-work-text {
@@ -508,33 +511,26 @@ p{
     flex-direction: column;
     flex: 1;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 
 .current-work-text h3{
     text-align: left;
     padding-top: 0px;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-bottom: 20px;
     font-size: 25px;
 }
 
-.current-work-img1 {
-    background-color: #d4d4d6;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 25px;
-    padding-top:25px;
-    border-radius: 5%;
-    margin-left: 60px;
+.current-work-elements {
+    display: table-column;
+    gap: 15px;
+    width: 50%;
 }
-
-.current-work-img2 {
-    background-color: #d4d4d6;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 25px;
-    padding-top:25px;
-    border-radius: 5%;
+.current-work-elements img {
+    width: 75%;
+    height: 55%;
+    object-fit: cover;
+    border-radius: 8px;
 }
