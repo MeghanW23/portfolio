@@ -9,6 +9,12 @@ h5 {
     font-size: 14px;
     text-align: center;
 }
+
+.award-col img {
+  height: clamp(250px, 40vw, 300px);  /* replaces height: 300px on both */
+  object-position: left;
+}
+.award-col:nth-child(1) img { object-position: center; }
 /*------ home page and toggle menu -----*/
 .header{
     min-height: 100vh;
@@ -231,6 +237,9 @@ h3{
 
     display: flex;
     flex-direction: column;
+}
+.button-row3 img {
+    object-position: top;
 }
 .award-content {
     display: flex;
