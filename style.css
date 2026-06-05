@@ -117,6 +117,7 @@ nav .fa{
 }
 
 @media(max-width: 700px){
+    html, body {overflow-x: hidden;}
     .text-box h1{
         font-size: 20px;
     }
@@ -395,12 +396,27 @@ p{
    background: white;
 }
 .hero-btn .fa {
-    font-size: 20px;  /* adjust to taste */
+    font-size: 20px;
 }
-
+@media(max-width: 700px){
+    .footer {
+        width: 90%;
+        padding: 30px;
+    }
+    .footer h3 {
+        font-size: 15px;
+    }
+    .footer p {
+        font-size: 12px;
+    }
+    .footer-button-row {
+        justify-content: center;
+    }
+}
 /* --- About page ---- */
 .sub-header{
-    height: 70vh;
+    min-height: 600px; /* adjust to taste */
+    height: auto;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/about_background.png);
     background-position: center;
@@ -415,122 +431,164 @@ p{
     position: relative;  /* so nav can be positioned inside it */
 
 }
-/* --- About page header ---- */
-.about-me img{
-   border-radius: 10%;
-   width: 100%;
-   height: 400px;
-   object-fit: cover;
-   padding: 6px;
-   background: white;
-   border-radius: 8px;
-   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-   display: block;
-   margin: 15px auto;
+@media(max-width: 700px){
+    .sub-header .text-box h1{
+        font-size: 40px;
+    }
 }
-
-.about-me h3{
-    justify-items: center;
-    text-align: center;
-    padding: 50px;
-    font-size: 25px;
-}
-
-/* --- About page background section ---- */
-.background {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding-right: 100px;
-    padding-left: 25px;
+.section-one {
     padding-top: 100px;
-}
-
-.background-text {
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    text-align: left;
-    padding-left: 50px;
+    align-items: flex-start;
+    gap: 50px;
 }
-
-.background-text h3{
-    text-align: left;
-    padding-left: 15px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 25px;
+.section-one-text{
+    width: 50%;
 }
-
-.background-elements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color: #d4d4d6;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 35px;
-    padding-right: 35px;
-    border-radius: 5%;
+.section-one-text p{
+    padding-bottom: 4%;
+    font-size: clamp(15px, 1vw, 30px)
 }
-.background-elements .hero-btn {
-    border-color: black;
+.section-one .hero-btn{
+    border: 1px solid black;
     color: black;
     width: 50%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.section-one h3{
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-left: 15px;
 }
 
-.background-imgs {
-    display: flex;
-    gap: 25px;
+.section-one img{
     width: 100%;
-}
-
-.background-imgs img {
-    width: 50%;
+    height: auto;
+    max-height: 450px;
     object-fit: cover;
+    padding: 10px;
+    background: white;
     border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
-/* --- About page current work section ---- */
-
-.current-work{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding-right: 100px;
-    padding-left: 50px;
-    padding-top: 50px;
+.section-one img:hover{
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+}
+.section-one figcaption{
+    color: black;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 1%;
+}
+.section-one a{
+    text-decoration: none;
+    text-align: center;
+}
+@media(max-width: 700px) {
+    .section-one{
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-bottom: 60px;
+    }
+    .section-one p{
+        padding-bottom: 5px;
+    }
     
+    .section-one-text{
+        width: 100%;
+    }
 }
-.current-work h3{
-    padding-top: 0px;
+.section-two {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    gap: 60px;
 }
-
-.current-work-text {
+.section-two-text{
+    width: 50%;
+}
+.section-two h3{
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+.section-two p{
+    font-size: clamp(15px, 1vw, 30px);
+    padding-bottom: 20px;
+}
+.section-two a{
+    text-decoration: none;
+}
+.section-two-elements{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    text-align: left;
-    padding-left: 10px;
+    gap: 30px;
 }
-
-
-.current-work-text h3{
-    text-align: left;
-    padding-top: 0px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    font-size: 25px;
-}
-
-.current-work-elements {
-    display: table-column;
-    gap: 15px;
-    width: 50%;
-}
-.current-work-elements img {
-    width: 75%;
-    height: 55%;
+.section-two img {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 300px;
     object-fit: cover;
+    padding: 10px;
+    background: white;
     border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.section-two img:hover{
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
+}
+.section-two figcaption{
+    color: black;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media(max-width: 700px) {
+    .section-two{
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    
+    .section-two-text{
+        width: 100%;
+    }
+    .section-two-elements{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.section-three {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 60px;
+}
+.section-three h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+.section-three p{
+    font-size: clamp(15px, 1vw, 30px);
+}
+@media(max-width: 700px){
+    .section-three{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
 }
