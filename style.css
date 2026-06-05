@@ -506,7 +506,7 @@ p{
     }
 }
 .section-two {
-    padding-top: 20px;
+    padding-top: 60px;
     padding-left: 100px;
     padding-right: 100px;
     display: flex;
@@ -572,7 +572,7 @@ p{
     }
 }
 .section-three {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-left: 100px;
     padding-right: 100px;
     gap: 60px;
@@ -587,6 +587,27 @@ p{
 }
 @media(max-width: 700px){
     .section-three{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+}
+.section-four {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 60px;
+}
+.section-four h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+.section-four p{
+    font-size: clamp(15px, 1vw, 30px);
+}
+@media(max-width: 700px){
+    .section-four{
         flex-direction: column;
         padding-left: 20px;
         padding-right: 30px;
