@@ -9,13 +9,7 @@ h5 {
     font-size: 14px;
     text-align: center;
 }
-
-.award-col img {
-  height: clamp(250px, 40vw, 300px);  /* replaces height: 300px on both */
-  object-position: left;
-}
-.award-col:nth-child(1) img { object-position: center; }
-/*------ home page and toggle menu -----*/
+/*------ Home Page Header and Toggle Menu -----*/
 .header{
     min-height: 100vh;
     width: 100%;
@@ -115,7 +109,6 @@ nav img {
 nav .fa{
     display: none;
 }
-
 @media(max-width: 700px){
     html, body {overflow-x: hidden;}
     .text-box h1{
@@ -146,8 +139,7 @@ nav .fa{
         padding: 30px;
     }
 }
-
-/* ------- Ongoing Projects ------- */ 
+/* ------- Home Page: Ongoing Projects ------- */ 
 .ongoing-projects{
     width: 80%;
     margin: auto;
@@ -198,12 +190,11 @@ p{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
-    font-size: 25px;
+    font-size: 20px;
 }
 .project-col:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4); 
 }
-
 @media(max-width: 700px) {
     .row{
         flex-direction: column;
@@ -212,8 +203,7 @@ p{
 .layer{
     background: #d4d4d6;
 }
-
-/* ---- Grants and awards */
+/* ---- Home Page: Grants and awards */
 .grants-and-awards{
     width: 80%;
     margin: auto;
@@ -225,7 +215,8 @@ p{
 .grants-and-awards h3{
     text-align: left;
     padding-top: 25px;
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
 }
 .grants-and-awards .row {
     display: flex;
@@ -244,6 +235,11 @@ p{
     display: flex;
     flex-direction: column;
 }
+.award-col img {
+  height: clamp(250px, 40vw, 300px);
+  object-position: left;
+}
+.award-col:nth-child(1) img { object-position: center; }
 .button-row3 img {
     object-position: top;
 }
@@ -265,11 +261,6 @@ p{
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
     display: block;
     margin: 15px auto;
-}
-.grants-and-awards h3{
-    font-size: 25px;
-    text-align: center;
-
 }
 .grants-and-awards p{
     font-size: 13px;
@@ -332,8 +323,7 @@ p{
     color: black;
     border: 1px solid black;
 }
-
-/*Publications*/
+/* ----- Home Page: Publications ----- */
 .publications{
     width: 80%;
     margin: auto;
@@ -362,11 +352,9 @@ p{
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
   .publication-col {
     padding: 20px;
   }
-
   .publications p {
     font-size: 13px;
     line-height: 1.6;
@@ -374,7 +362,7 @@ p{
     overflow-wrap: break-word;
   }
 }
-
+/* ----- Across Page Footer ----- */
 .footer{
     width: 50%;
     margin: auto;
@@ -413,7 +401,7 @@ p{
         justify-content: center;
     }
 }
-/* --- About page ---- */
+/* --- About Page Header ---- */
 .sub-header{
     min-height: 600px; /* adjust to taste */
     height: auto;
@@ -436,6 +424,7 @@ p{
         font-size: 40px;
     }
 }
+/* --- About Page: Background ---- */
 .section-one {
     padding-top: 100px;
     padding-left: 100px;
@@ -464,7 +453,6 @@ p{
     padding-bottom: 10px;
     padding-left: 15px;
 }
-
 .section-one img{
     width: 100%;
     height: auto;
@@ -505,6 +493,7 @@ p{
         width: 100%;
     }
 }
+/* --- About Page: Current Work ---- */
 .section-two {
     padding-top: 60px;
     padding-left: 100px;
@@ -552,7 +541,6 @@ p{
     text-align: center;
     font-size: 13px;
 }
-
 @media(max-width: 700px) {
     .section-two{
         flex-direction: column-reverse;
@@ -560,7 +548,6 @@ p{
         padding-left: 20px;
         padding-right: 30px;
     }
-    
     .section-two-text{
         width: 100%;
     }
@@ -571,6 +558,7 @@ p{
         gap: 30px;
     }
 }
+/* --- About Page: Continuing Education ---- */
 .section-three {
     padding-top: 60px;
     padding-left: 100px;
@@ -592,6 +580,7 @@ p{
         padding-right: 30px;
     }
 }
+/* --- About Page: Future Directions ---- */
 .section-four {
     padding-top: 60px;
     padding-left: 100px;
@@ -611,5 +600,31 @@ p{
         flex-direction: column;
         padding-left: 20px;
         padding-right: 30px;
+    }
+}
+/* ------- Motion Page ------- */
+.motion-sub-header{
+    min-height: 600px; /* adjust to taste */
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/bw_3d_movement_visualizer.gif);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    object-position: top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;  /* so nav can be positioned inside it */
+
+}
+.motion-sub-header .text-box h1{
+    font-size: 50px;
+}
+@media(max-width: 700px){
+    .motion-sub-header .text-box h1{
+        font-size: 40px;
     }
 }
