@@ -41,7 +41,6 @@
 </section>
 <!-------- Introduction and Grants------->
 <section class="introduction-section">
-    <h3>Introduction</h3>
     <p>One driving principle of neuroscience is plasticity, the brain's ability to modulate neural activity 
         and connections in temporary and permanent ways. This process can be co-opted through neurofeedback, which presents 
         an individual's own neural signals back to them to create neural and behavioral changes.
@@ -50,7 +49,7 @@
         I developed a <b>user-friendly containerized real-time fMRI-NF protocol</b> for Siemens (XA30) MRI scanners which 
         facilitates the acquisition, processing, localization, and task and feedback display with low CPU/memory requirements.
         <br><br>
-        This project has been featured in a number of grants and submissions:
+        This project has been featured in a number of awards and grant submissions:
     </p>
     <div class="grants">
         <div class="samuels-grant">
@@ -112,9 +111,82 @@
         </div>
     </div>
 </section>
+<!-------- Project Features ------->
+<section class="features">
+    <h3>Project Features</h3>
+    <h5>
+        Our system utilizes a series of Docker containers controlled by 
+        a simple Command Line Interface, allowing experimenter control with no 
+        manual configuration, which can:
+    </h5>
+    <div class="attention-tasks">
+        <h3><b>
+            Run Tasks to Localize Attentionally-Implicated Brain Regions 
+            and Measure Attention
+        </b></h3>
+        <div class="attention-task-column">
+            <div class="msit">
+                <p><b>MSIT Task</b></p>
+                <p>
+                    (Bush & Shin 2006): The <a href="https://github.com/ccraddock/msit">MSIT Task</a>
+                    activates attentional regions, namely the Anterior Cingulate Cortex, or ACC. 
+                    For control trials, the paired digits are zero and the position of the target digit 
+                    corresponds to its location. For interference trials, the distractor 
+                    digits are non-zero and the target digits location is not the same as its 
+                    value.
+                </p>
+                <img src="assets/msit.gif">
+                <figcaption>
+                    During the MSIT task, participants must choose the number that is 
+                    different from the other two. (Ex. Press '1' if the numbers are '212')
+                </figcaption>
+            </div>
+            <div class="msit">
+                <p><b>Stop/Signal Task</b></p>
+                <p>
+                    A go/no-go task where participants must press a 
+                    button when they see a cartoon astronaut and refrain 
+                    from pressing a button when they occasionally see a cartoon bear. 
+                    Tasks of this nature, which require participants to inhibit a response, 
+                    has been shown to heavily involve the Right Inferior Frontal Gyrus, or RIFG 
+                    (Rubia et al. 2003).
+                </p>
+                <img src="assets/rifg.gif">
+                <figcaption>
+                    During the RIFG task, participants must not press the button 
+                    when they see the bear. They must press the button when 
+                    they see the astronaut.
+                </figcaption>
+            </div>
+        </div>
+    </div>
+    <div class="neurofeedback">
+        <h3><b>
+            Calculate Neurofeedback Metrics and 
+            Project Results to the MRI's Screen
+        </b></h3>
+        <p>
+            A real-time neurofeedback task where individuals in the 
+            scanner are shown their brain activity in an attention-related 
+            brain region of interest, either Anterior Cingulate Cortex (ACC) 
+            or Right Inferior Frontal Gyrus (RIFG), via a rocket going into a portal. 
+            If that brain region becomes more active (i.e. the participant is paying 
+            attention more), the rocket gets closer to the portal. If that brain region 
+            becomes less active, the rocket gets further from the portal.
+        </p>
+        <p>
+            <br>
+            In an Ubuntu-based Docker image, we:
+            <br> 1. Calculate an ROI's brain activation for each DICOM using GLM residuals or mean intensity.
+            <br> 2. Normalize activation to a score (-1 to 1).
+            <br> 3. Visualize the score as a rocket moving toward a portal.
+
+        </p>
+    </div>
+</section>
 <!-------- Project Explanation ------->
 <section class="project-overview">
-    <h3>Project Overview</h3>
+    <h3>About The Ongoing Experiment</h3>
     <p>
         I built this pipeline with the goal of creating a reusable tool. It has since been handed off to 
         another coworker for data collection toward the following project: 
@@ -132,6 +204,36 @@
         and therapeutic approaches for individuals with the condition.
     </p>
 </section>
+<!-------- Citations ------->
+<section class="citations">
+    <h3>Citations</h3>
+    <p>
+        Bush, G., Shin, L. The Multi-Source Interference Task: an fMRI task that 
+        reliably activates the cingulo-frontal-parietal cognitive/attention network. 
+        Nat Protoc 1, 308–313 (2006). 
+        <a href="https://doi.org/10.1038/nprot.2006.48">https://doi.org/10.1038/nprot.2006.48</a>.
+    </p>
+    <p><br>
+        Rubia K, Smith AB, Brammer MJ, Taylor E. Right inferior prefrontal cortex mediates 
+        response inhibition while mesial prefrontal cortex is responsible for error detection. 
+        Neuroimage. 2003 Sep;20(1):351-8.
+        <a href="https://doi.org/10.1016/s1053-8119(03)00275-1">https://doi.org/10.1016/s1053-8119(03)00275-1</a>.
+        PMID: 14527595.
+    </p>
+</section>
+<!-------- Javascript for Mobile Toggle Menu ------->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
 <!-------- Footer ------->
 <section class="footer">
     <h3>Contact Information</h3>
