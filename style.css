@@ -715,6 +715,18 @@ p{
     padding: 15px;
     border-radius: 8px;
 }
+@media(max-width: 700px){
+    .introduction-section{
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+    .introduction-section .grants {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 /* ------- Neurofeedback Page: Project Overview ------- */
 .project-overview{
     text-align: left;
@@ -732,4 +744,11 @@ p{
 }
 .project-overview a {
     text-decoration: none;
+}
+@media(max-width: 700px){
+    .project-overview{
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+
 }
