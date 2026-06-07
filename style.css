@@ -9,6 +9,9 @@ h5 {
     font-size: 14px;
     text-align: center;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*------ Home Page Header and Toggle Menu -----*/
 .header{
     min-height: 100vh;
@@ -627,4 +630,106 @@ p{
     .motion-sub-header .text-box h1{
         font-size: 40px;
     }
+}
+/* ------- Neurofeedback Page ------- */
+.neurofeedback-sub-header{
+    min-height: 600px; /* adjust to taste */
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/mri_photo.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    object-position: top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;  /* so nav can be positioned inside it */
+
+}
+/* ------- Neurofeedback Page: Introduction Section ------- */
+.introduction-section{
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    
+}
+.introduction-section h3{
+    padding-left: 14px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.introduction-section ul {
+    font-size: 15px;
+}
+.introduction-section a {
+    text-decoration: none;
+}
+/* ------- Neurofeedback Page: Introduction Section: Grants------- */
+.introduction-section .grants {
+    text-align: left;
+    display: flex;
+    padding-top: 50px;
+    gap: 40px;
+    padding-left: 50px;
+    padding-right: 70px;
+
+}
+.introduction-section .grants a{
+    color: black;
+    border-color: black;
+    padding: 15px;
+    width: 60%;
+    display: flex;
+    margin: 30px auto;
+}
+.introduction-section .grants h5{
+    text-align: center;    
+    font-size: 18px;
+    padding-top: 10px;
+  
+}
+.introduction-section .grants p{
+    font-size: 15px;
+    text-align: center;
+    
+}
+.introduction-section .grants .samuels-grant{
+    width: 100%;
+    background-color: #e8e8ea;
+    padding: 15px;
+    border-radius: 8px;
+}
+.introduction-section .grants .interface-neuro{
+    width: 100%;
+    background-color: #e8e8ea;
+    padding: 15px;
+    border-radius: 8px;
+}
+.introduction-section .grants .ro1{
+    width: 100%;
+    background-color: #e8e8ea;
+    padding: 15px;
+    border-radius: 8px;
+}
+/* ------- Neurofeedback Page: Project Overview ------- */
+.project-overview{
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+.project-overview h3{
+    padding-left: 14px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.project-overview ul {
+    font-size: 15px;
+}
+.project-overview a {
+    text-decoration: none;
 }

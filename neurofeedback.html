@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghan Walsh | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet", href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-------- Header ------->
+<section class="neurofeedback-sub-header">
+    <nav>
+        <a href="index.html"><img src="assets/logo.png"></a>
+        <div class="nav-links", id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="intravolume_motion.html">fMRI MOTION CHARACTERIZATION</a></li>
+                <li><a href="neurofeedback.html">fMRI NEUROFEEDBACK</a></li>
+                <li><a href="undergraduate_research.html">UNDERGRADUATE RESEARCH</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav> 
+<div class="text-box">
+    <h1>fMRI Neurofeedback for ADHD</h1>
+    <a 
+        href="https://github.com/MeghanW23/cohenlab_neurofeedback" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="hero-btn">
+        <i class="fa fa-github"></i>Project GitHub
+    </a>
+</div>
+</section>
+<!-------- Introduction and Grants------->
+<section class="introduction-section">
+    <h3>Introduction</h3>
+    <p>One driving principle of neuroscience is plasticity, the brain's ability to modulate neural activity 
+        and connections in temporary and permanent ways. This process can be co-opted through neurofeedback, which presents 
+        an individual's own neural signals back to them to create neural and behavioral changes.
+        <br><br>
+        fMRI neurofeedback (fMRI-NF) offers direct evidence of neuromodulation efficacy but is hindered by complex technical barriers.
+        I developed a <b>user-friendly containerized real-time fMRI-NF protocol</b> for Siemens (XA30) MRI scanners which 
+        facilitates the acquisition, processing, localization, and task and feedback display with low CPU/memory requirements.
+        <br><br>
+        I built this pipeline with the goal of creating a reusable tool. It has since been handed off to another RA and 
+        is actively being used in an <a href="#project-overview">ongoing project</a>.
+        <br><br>
+        This project has been featured in a number of grants and submissions:
+    </p>
+    <div class="grants">
+        <div class="samuels-grant">
+            <h5><b>Steve Samuels & Ami Cipolla<br>Innovation Pilot Grant</b></h5>
+            <p><br><i>Optimizing Real-time fMRI Neurofeedback to Improve Sustained Attention in ADHD</i></p>
+            <p>Boston Children's Hospital | April 2024</p>
+            <p><br>
+                A one-year, $100,000 pilot grant funding innovative research projects exploring 
+                neurobiological mechanisms of attention and anxiety and offering translational 
+                potential to develop new biomarkers or therapeutic strategies 
+                for conditions like ADHD.
+            </p>
+            <a 
+                href="documents/samuels_application.pdf"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="hero-btn">
+                View Grant Proposal
+            </a>
+        </div>
+        <div class="interface-neuro">
+            <h5><b>InterfaceNeuro Travel Award</b></h5>
+            <p><br><i>Development and Implementation of a Portable Real-Time fMRI Neurofeedback Protocol</i></p>
+            <p>Georgia Institute of Technology | May 2025</p>
+            <p><br>
+                A $500 travel award to present this work  InterfaceNeuro, an interdisciplinary neurotechnology 
+                conference focused on advancing brain-body-machine interfaces. 
+            </p>
+            <a 
+                href="documents/InterfaceNeuroAbstract.pdf"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="hero-btn">
+                View Abstract
+            </a>
+            <a 
+                href="documents/InterfaceNeuroPoster.pdf"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="hero-btn">
+                View Poster
+            </a>
+        </div>
+        <div class="ro1">
+            <h5><b>R01 Grant | Under Review</b></h5>
+            <p><br><i>Disentangling Stimulant-Induced Head Motion Reduction from Neural Signatures of Treatment Response in ADHD</i></p>
+            <p>National Institutes of Health (NIH) | February 2026</p>
+            <p><br>
+                A multi-year R01 grant submission investigating how psychostimulant medications 
+                modulate brain networks in ADHD using pharmacological fMRI and slice-based motion correction. 
+            </p>
+            <a 
+                href="documents/r01_submission.pdf"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="hero-btn">
+                View R01 Proposal
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-------- Project Explanation ------->
+<section class="project-overview">
+    <h3>Project Overview</h3>
+    <p>
+        Attention-deficit/hyperactivity disorder (ADHD) is a complex condition often treated 
+        with stimulant medications, which have proven effective in managing symptoms like inattention 
+        and impulsivity but can cause side effects. The question remains whether non-pharmacological interventions, 
+        such as neurofeedback, can replicate or enhance the benefits of stimulants in individuals with ADHD. 
+        Additionally, functional magnetic resonance imaging (fMRI) studies in ADHD research have often been hindered 
+        by unaccounted motion artifacts, leading to potential inaccuracies in measuring brain activity. Our research 
+        aims to address these gaps by improving the methods used to correct for motion in neuroimaging studies and by 
+        exploring the potential of neurofeedback as an alternative or complementary treatment for ADHD.
+        <br><br>
+        Our research has two objectives:
+        <br><br>
+        (1) <b>Address the Impact of Motion on fMRI Results Involving Individuals with ADHD:</b>
+        <br>
+        We will investigate and address the impact of motion artifacts in fMRI research, particularly in 
+        ADHD studies where motion has previously been unmeasured or inadequately accounted for. By incorporating 
+        <a href="intravolume_motion.html">new technology</a> to better capture and correct for motion, and by repeating experiments with this improved 
+        capability, we aim to refine our understanding of how motion affects neuroimaging results.
+        <br><br>
+        (2) <b>Address the Feasibility of Neurofeedback as a Method to Replicate the Effects of Stimulants in ADHD</b>
+        <br>
+        Our study will explore whether neurofeedback can replicate or enhance the effects of stimulant medications in 
+        individuals with ADHD. By comparing brain activity and performance on attention tasks during neurofeedback and 
+        stimulant conditions, we aim to determine if neurofeedback can serve as an alternative or complement to stimulants 
+        in managing ADHD symptoms. This investigation will contribute to the literature by evaluating the potential of 
+        neurofeedback to replicate or amplify the benefits typically associated with stimulant treatments, without the 
+        side effects associated with stimulant drugs. By addressing the impact of motion artifacts and investigating the 
+        effects of neurofeedback compared to stimulant medications, our study seeks to refine neuroimaging techniques and 
+        expand the understanding of ADHD treatment options. If neurofeedback can replicate or amplify the effects of stimulants 
+        on brain activity and attention, it may offer a promising, non-invasive treatment with fewer side effects. Ultimately, 
+        this research has the potential to advance both methodological practices in ADHD research and therapeutic approaches for 
+        individuals with the condition.
+    </p>
+</section>
+<!-------- Footer ------->
+<section class="footer">
+    <h3>Contact Information</h3>
+    <p>meghan.walsh2@childrens.harvard.edu</p>
+    <p>wmeghan0809@gmail.com</p>
+    <p></p>
+    <p>+1 774 244 5591</p>
+    <div class="footer-button-row">
+        <a href="https://www.linkedin.com/in/meghan-walsh-359789260/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="hero-btn">
+            <i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/MeghanW23/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="hero-btn">
+            <i class="fa fa-github"></i></a>
+    </div>
+</section>
