@@ -806,16 +806,194 @@ p{
 .features .registration h3{
     font-size: 20px;
 }
-.features .registration .options-container{
-    display: flex;
+.features .registration .options-container{    
     padding: 20px;
     gap: 20px;
 }
-.features .registration .options-container .registration-option{
-    width: 50%;
+.features .registration .options-container .registration-option-easyreg{
+    width: 100%;
+    display: flex;
+    gap: 20px;
 }
-.features .registration .options-container .registration-option p{
-    padding: 5px;
+.features .registration .options-container .registration-option-easyreg p{
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container{
+    width: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 90%;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container p{
+     display: None;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .easyreg-slides {
+  display: none;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .easyreg-slides img{
+    border-radius: 8px;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .easyreg-slides .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .prev,
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+    z-index: 10;
+}
+
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .prev {
+    left: 10px;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .next {
+    right: 10px;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .easyreg-slides .prev:hover 
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .easyreg-slides .next:hover {
+  background-color: white;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .easyreg-slides .numbertext {
+  color: #000000;
+  font-size: 15px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 10px;
+  background-color: white;
+  border-radius: 8px 0px;
+}
+.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .easyreg-slides .fade {
+  animation-name: fade;
+  animation-duration: 0.25s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.features .registration .options-container .registration-option-fnirt{
+    width: 100%;
+    display: flex;
+    padding-top: 15px;
+    gap: 20px;
+}
+.features .registration .options-container .registration-option-fnirt p{
+    width: 40%;
+    margin: auto;
+}
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container{
+    width: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 90%;
+}
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container p{
+     display: None;
+}
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .fnirt-slides {
+  display: none;
+}
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .fnirt-slides img{
+    border-radius: 8px;
+}
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .fnirt-slides .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .prev,
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+    z-index: 10;
+}
+
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .prev {
+    left: 10px;
+}
+
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .next {
+    right: 10px;
+}
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .fnirt-slides .prev:hover 
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .fnirt-slides .next:hover {
+  background-color: white;
+}
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .fnirt-slides .numbertext {
+  color: #000000;
+  font-size: 15px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 10px;
+  background-color: white;
+  border-radius: 8px 0px;
+}
+.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .fnirt-slides .fade {
+  animation-name: fade;
+  animation-duration: 0.25s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 .features .neurofeedback{
     border-radius: 8px;
@@ -826,7 +1004,7 @@ p{
     margin-right: 4%;
    
 }
-.features .neurofeedback .for-mobile{
+.features .neurofeedback .warning-for-mobile{
     display: none;
 }
 .features .neurofeedback p {
@@ -900,6 +1078,11 @@ p{
 .features .neurofeedback .video-game{
     margin: auto;
     padding: 40px;
+    display: flex;
+    gap: 15px;
+}
+.features .neurofeedback .video-game p{
+    margin: auto;
 }
 .features .neurofeedback .video-game img{
     display: block; 
@@ -910,20 +1093,24 @@ p{
     border-radius: 8px;
 }
 .features .neurofeedback .graph{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
-    margin: 0 40px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    gap: 30px;
+}
+.features .neurofeedback .graph p{
+    width: 30%;
+    margin: auto;
 }
 .features .neurofeedback .graph iframe{
     display: block;
-    width: 90%;
     max-width: 1000px;
     padding: 15px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    margin: 15px auto 10px;
+    width: 70%;
 }
 @media(max-width: 700px){
     .features{
@@ -955,28 +1142,57 @@ p{
         display: flex;
         flex-direction: column;
     }
-    .features .registration .options-container .registration-option{
+    .features .registration .options-container .registration-option-easyreg{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .features .registration .options-container .registration-option-easyreg p{
+        width: 100%;
+    }
+    .features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container{
+        display: none;
+    }
+    .features .registration .options-container .registration-option-fnirt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin: none;
+    }
+    .features .registration .options-container .registration-option-fnirt p{
+        width: 100%;
+    }
+    .features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container{
+        display: none;
     }
     .features .neurofeedback {
         display: flex;
         flex-direction: column;
     }
-    .features .neurofeedback .nfb-slideshow-container{
-       display: none;
+    .features .neurofeedback .warning-for-mobile{
+        display: block;
+        text-align: center;
     }
     .features .neurofeedback .video-game{
-        padding: 2px;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 10px;
     }
     .features .neurofeedback .video-game img{
         width: 90%;
     }
-    .features .neurofeedback .graph{
-        padding: 2px;
-        margin: auto;
+    .features .neurofeedback .graph {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+
     }
-    .features .neurofeedback .graph iframe{
+    .features .neurofeedback .graph p {
+        width: 90%;
+    }
+    .features .neurofeedback .graph iframe {
         display: none;
     }
 }

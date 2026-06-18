@@ -171,9 +171,10 @@
             <br>in Real-Time using either EasyReg or FSL
         </b></h3>
         <div class="options-container">
-            <div class="registration-option">
-                <p><b>EASYREG SCRIPT</b></p>
+            <div class="registration-option-easyreg">
                 <p>
+                    <b>EASYREG SCRIPT</b>
+                    <br><br>
                     Through a series of scripts
                     involving the transfer of files to/from Boston Children's High
                     Performance Computing cluster (e3) and a local Docker container,
@@ -187,10 +188,97 @@
                     </a>,
                     a machine learning tool for registration of brain MRI.
                 </p>
+                <div class="easyreg-slideshow-container">
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">1 of 11</div>
+                        <img src="assets/easyreg_slides/slide1.png" style="width:100%">
+                    </div>
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">2 of 11</div>
+                        <img src="assets/easyreg_slides/slide2.png" style="width:100%">
+                    </div>
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">3 of 11</div>
+                        <img src="assets/easyreg_slides/slide3.png" style="width:100%">
+                    </div>
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">4 of 11</div>
+                        <img src="assets/easyreg_slides/slide4.png" style="width:100%">
+                    </div>
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">5 of 11</div>
+                        <img src="assets/easyreg_slides/slide5.png" style="width:100%">
+                    </div>
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">6 of 11</div>
+                        <img src="assets/easyreg_slides/slide6.png" style="width:100%">
+                    </div>
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">7 of 11</div>
+                        <img src="assets/easyreg_slides/slide7.png" style="width:100%">
+                    </div>
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">8 of 11</div>
+                        <img src="assets/easyreg_slides/slide8.png" style="width:100%">
+                    </div>
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">9 of 11</div>
+                        <img src="assets/easyreg_slides/slide9.png" style="width:100%">
+                    </div>
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">10 of 11</div>
+                        <img src="assets/easyreg_slides/slide10.png" style="width:100%">
+                    </div>
+                    <div class="easyreg-slides fade">
+                        <div class="numbertext">11 of 11</div>
+                        <img src="assets/easyreg_slides/slide11.png" style="width:100%">
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1, 'easyreg')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'easyreg')">&#10095;</a>
+                </div>
             </div>
-            <div class="registration-option">
-                <p><b>FNIRT SCRIPT</b></p>
+            <div class="registration-option-fnirt">
+                <div class="fnirt-slideshow-container">
+                    <div class="fnirt-slides fade">
+                        <div class="numbertext">1 of 8</div>
+                        <img src="assets/fnirt_slides/slide1.png" style="width:100%">
+                    </div>
+                    <div class="fnirt-slides fade">
+                        <div class="numbertext">2 of 8</div>
+                        <img src="assets/fnirt_slides/slide2.png" style="width:100%">
+                    </div>
+                    <div class="fnirt-slides fade">
+                        <div class="numbertext">3 of 8</div>
+                        <img src="assets/fnirt_slides/slide3.png" style="width:100%">
+                    </div>
+                    <div class="fnirt-slides fade">
+                        <div class="numbertext">4 of 8</div>
+                        <img src="assets/fnirt_slides/slide4.png" style="width:100%">
+                    </div>
+                    <div class="fnirt-slides fade">
+                        <div class="numbertext">5 of 8</div>
+                        <img src="assets/fnirt_slides/slide5.png" style="width:100%">
+                    </div>
+                    <div class="fnirt-slides fade">
+                        <div class="numbertext">6 of 8</div>
+                        <img src="assets/fnirt_slides/slide6.png" style="width:100%">
+                    </div>
+                    <div class="fnirt-slides fade">
+                        <div class="numbertext">7 of 8</div>
+                        <img src="assets/fnirt_slides/slide7.png" style="width:100%">
+                    </div>
+                    <div class="fnirt-slides fade">
+                        <div class="numbertext">8 of 8</div>
+                        <img src="assets/fnirt_slides/slide8.png" style="width:100%">
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1, 'fnirt')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'fnirt')">&#10095;</a>
+                </div>
                 <p>
+                    <b>FNIRT SCRIPT</b>
+                    <br><br>
                     Using FSL's 
                     <a 
                         href="https://fsl.fmrib.ox.ac.uk/fsl/docs/registration/fnirt/index.html"
@@ -218,8 +306,10 @@
         <h3><b>
             Calculate Neurofeedback Metrics and Project Results to the MRI's Screen
         </b></h3>
-        <div class="for-mobile">
-            <p><b>For additional graphs and information, please view on a larger screen.</b></p>
+        <div class="warning-for-mobile">
+            <p>
+                <b>To view all elements, please view on a larger screen.</b>
+            </p>
         </div>
         <!-- Slideshow container -->
         <div class="nfb-slideshow-container">
@@ -276,13 +366,13 @@
                 <img src="assets/nfb_slides/slide13.png" style="width:100%">
             </div>
             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1, 'nfb')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'nfb')">&#10095;</a>
         </div>
         <div class="video-game">
             <p>
-                A real-time neurofeedback task where individuals in the 
-                scanner are shown their brain activity in an attention-related 
+                <b>VIDEO GAME DISPLAY</b><br><br>A real-time neurofeedback task where individuals 
+                in the scanner are shown their brain activity in an attention-related 
                 brain region of interest, either <b>Anterior Cingulate Cortex (ACC)</b>
                 or <b>Right Inferior Frontal Gyrus (RIFG)</b>, via a rocket going into a portal. 
                 If that brain region becomes more active (i.e. the participant is paying 
@@ -292,13 +382,13 @@
             <img src="assets/nfb.gif">
         </div>
         <div class="graph">
-            <p>
-                In the associated study, we focus on upregulating regions of interest (ROIs) that are most active during stimulant use, 
-                such as the Right Inferior Frontal Gyrus (Rubia et al. 2014). By providing feedback to individuals 
-                based on these targeted ROIs, our goal is to mimic the normalized neural effects of stimulants without the 
-                associated side effects.
-            </p>
             <iframe src="assets/sample_nfb_graph.html" height="500px" style="border: none;"></iframe>
+            <p>
+                <b>NEUROMODULATION</b><br><br>In the associated study, we focus on upregulating regions of interest 
+                (ROIs) that are most active during stimulant use, such as the Right Inferior Frontal Gyrus (Rubia et al. 2014). 
+                By providing feedback to individuals based on these targeted ROIs, our goal is to mimic the normalized neural 
+                effects of stimulants without the associated side effects.
+            </p>
         </div>
     </div>
 </section>
@@ -344,35 +434,44 @@
         <a href="https://doi.org/10.1016/s1053-8119(03)00275-1">https://doi.org/10.1016/s1053-8119(03)00275-1</a>.
         PMID: 14527595.
     </p>
-
-    
-    
 </section>
 <!--------- Javascript for Slideshow ------------>
 <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    let slideIndices = {
+        easyreg: 1,
+        fnirt: 1,
+        nfb: 1
+    };
 
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
+    showSlides(1, "easyreg");
+    showSlides(1, "fnirt");
+    showSlides(1, "nfb");
+
+    function plusSlides(n, slideshow) {
+        slideIndices[slideshow] += n;
+        showSlides(slideIndices[slideshow], slideshow);
     }
 
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
+    function showSlides(n, slideshow) {
 
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("nfb-slides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
+        let slides;
+
+        if (slideshow === "easyreg") {
+            slides = document.getElementsByClassName("easyreg-slides");
+        } else if (slideshow === "fnirt") {
+            slides = document.getElementsByClassName("fnirt-slides");
+        } else {
+            slides = document.getElementsByClassName("nfb-slides");
+        }
+
+        if (n > slides.length) slideIndices[slideshow] = 1;
+        if (n < 1) slideIndices[slideshow] = slides.length;
+
+        for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        slides[slideIndex-1].style.display = "block";
+
+        slides[slideIndices[slideshow] - 1].style.display = "block";
     }
 </script>
 <!-------- Javascript for Mobile Toggle Menu ------->
