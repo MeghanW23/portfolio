@@ -127,7 +127,13 @@
             <div class="msit">
                 <p><b>MSIT Task</b></p>
                 <p>
-                    (Bush & Shin 2006): The <a href="https://github.com/ccraddock/msit">MSIT Task</a>
+                    (Bush & Shin 2006): The 
+                    <a 
+                        href="https://github.com/ccraddock/msit"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >MSIT Task
+                    </a>
                     activates attentional regions, namely the Anterior Cingulate Cortex, or ACC. 
                     For control trials, the paired digits are zero and the position of the target digit 
                     corresponds to its location. For interference trials, the distractor 
@@ -159,69 +165,119 @@
             </div>
         </div>
     </div>
+    <div class="registration">
+        <h3><b>
+            Register Atlas Region of Interest (ROI) Masks to Subject-Space 
+            <br>in Real-Time using either EasyReg or FSL
+        </b></h3>
+        <div class="options-container">
+            <div class="registration-option">
+                <p><b>EASYREG SCRIPT</b></p>
+                <p>
+                    Through a series of scripts
+                    involving the transfer of files to/from Boston Children's High
+                    Performance Computing cluster (e3) and a local Docker container,
+                    an MNI-space mask is registered to a participant's brain using
+                    FreeSurfer's 
+                    <a 
+                        href="https://surfer.nmr.mgh.harvard.edu/fswiki/EasyReg"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >EasyReg
+                    </a>,
+                    a machine learning tool for registration of brain MRI.
+                </p>
+            </div>
+            <div class="registration-option">
+                <p><b>FNIRT SCRIPT</b></p>
+                <p>
+                    Using FSL's 
+                    <a 
+                        href="https://fsl.fmrib.ox.ac.uk/fsl/docs/registration/fnirt/index.html"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >FNIRT
+                    </a>
+                    and 
+                    <a 
+                        href="https://fsl.fmrib.ox.ac.uk/fsl/docs/registration/flirt/index.html"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >FLIRT
+                    </a>
+                    tools, this script registers ROI masks to a 
+                    participant's brain. It's process includes DICOM to NifTi conversion, 
+                    skull-stripping and mask creation, affine and nonlinear registration, as 
+                    well as mask binarization. A registration pipeline that is able to be ran
+                    locally instead of HPCs.
+                </p>
+            </div> 
+        </div>
+    </div>
     <div class="neurofeedback">
         <h3><b>
             Calculate Neurofeedback Metrics and Project Results to the MRI's Screen
         </b></h3>
+        <div class="for-mobile">
+            <p><b>For additional graphs and information, please view on a larger screen.</b></p>
+        </div>
         <!-- Slideshow container -->
-        <div class="slideshow-container">
-            <div class="slides fade">
+        <div class="nfb-slideshow-container">
+            <div class="nfb-slides fade">
                 <div class="numbertext">1 of 13</div>
                 <img src="assets/nfb_slides/slide1.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">2 of 13</div>
                 <img src="assets/nfb_slides/slide2.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">3 of 13</div>
                 <img src="assets/nfb_slides/slide3.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">4 of 13</div>
                 <img src="assets/nfb_slides/slide4.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">5 of 13</div>
                 <img src="assets/nfb_slides/slide5.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">6 of 13</div>
                 <img src="assets/nfb_slides/slide6.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">7 of 13</div>
                 <img src="assets/nfb_slides/slide7.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">8 of 13</div>
                 <img src="assets/nfb_slides/slide8.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">9 of 13</div>
                 <img src="assets/nfb_slides/slide9.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">10 of 13</div>
                 <img src="assets/nfb_slides/slide10.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">11 of 13</div>
                 <img src="assets/nfb_slides/slide11.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">12 of 13</div>
                 <img src="assets/nfb_slides/slide12.png" style="width:100%">
             </div>
-            <div class="slides fade">
+            <div class="nfb-slides fade">
                 <div class="numbertext">13 of 13</div>
                 <img src="assets/nfb_slides/slide13.png" style="width:100%">
             </div>
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <!-- For mobile only -->
-            <p>Please view this slideshow on a laptop or desktop.</p>
         </div>
         <div class="video-game">
             <p>
@@ -241,9 +297,8 @@
                 such as the Right Inferior Frontal Gyrus (Rubia et al. 2014). By providing feedback to individuals 
                 based on these targeted ROIs, our goal is to mimic the normalized neural effects of stimulants without the 
                 associated side effects.
-
             </p>
-            <iframe src="assets/sample_nfb_graph.html" width="100%" height="500px" style="border: none;"></iframe>
+            <iframe src="assets/sample_nfb_graph.html" height="500px" style="border: none;"></iframe>
         </div>
     </div>
 </section>
@@ -310,7 +365,7 @@
 
     function showSlides(n) {
         let i;
-        let slides = document.getElementsByClassName("slides");
+        let slides = document.getElementsByClassName("nfb-slides");
         let dots = document.getElementsByClassName("dot");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
