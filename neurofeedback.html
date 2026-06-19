@@ -146,7 +146,7 @@
                     different from the other two. (Ex. Press '1' if the numbers are '212')
                 </figcaption>
             </div>
-            <div class="msit">
+            <div class="stop-signal">
                 <p><b>Stop/Signal Task</b></p>
                 <p>
                     A go/no-go task where participants must press a 
@@ -300,6 +300,20 @@
                     locally instead of HPCs.
                 </p>
             </div> 
+        </div>
+    </div>
+    <div class="localizer">
+        <h3><b>Localize Region of Interest (ROI)</b></h3>
+        <div class="first-row">
+            <p>
+                This pipeline localizes and creates a
+                mask of a brain region (within a given registered brain region)
+                based on activation from either the MSIT task or RIFG task. It
+                allows the experimenter to choose the threshold activation level
+                for voxels included in the outputted mask via visualization in
+                FSLeyes.
+            </p>
+            <img src="assets/localizer_demo.gif">
         </div>
     </div>
     <div class="neurofeedback">
