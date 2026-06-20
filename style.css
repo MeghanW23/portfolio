@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    
+    box-sizing: border-box;
+
 }
 h5 {
     font-weight: 300;
@@ -815,11 +816,8 @@ p{
 }
 .features .registration{
     padding: 15px;
-    align-items: flex-end;
-    margin-top: 3%;
-    margin-left: 4%;
-    margin-right: 4%;
-    width: 90%;
+    width: 100%;
+    margin: auto;
 
 }
 .features .registration h3{
@@ -828,9 +826,11 @@ p{
 }
 .features .registration .options-container{    
     gap: 50px;    
+    width: 100%;
+    margin: auto;
 }
 .features .registration .options-container .registration-option-easyreg{
-    width: 95%;
+    width: 100%;
     display: flex;
     gap: 20px;
     padding: 30px;
@@ -918,7 +918,7 @@ p{
   border-radius: 8px 0px;
 }
 .features .registration .options-container .registration-option-fnirt{
-    width: 95%;
+    width: 100%;
     display: flex;
     padding: 30px;
     gap: 20px;
@@ -1004,20 +1004,12 @@ p{
   background-color: white;
   border-radius: 8px 0px;
 }
-.features .registration .options-container .registration-option-fnirt .fnirt-slideshow-container .fnirt-slides .fade {
-  animation-name: fade;
-  animation-duration: 0.25s;
-}
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 .features .registration .masks{
     display: flex;
     flex-direction: row;
     gap: 60px;
     width: 100%;
-    margin: 2%;
+    align-items: center;
 }
 .features .registration .masks p{
     text-align: center;
@@ -1262,11 +1254,12 @@ p{
     .features .registration .options-container{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         gap: 5px;
+        margin: auto;
     }
     .features .registration .options-container .registration-option-easyreg{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -1277,7 +1270,7 @@ p{
         display: none;
     }
     .features .registration .options-container .registration-option-fnirt{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -1290,7 +1283,8 @@ p{
     .features .registration .masks{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
+        gap: 10px;
     }
     .features .registration .masks .acc {
         padding: 10px;
@@ -1300,6 +1294,10 @@ p{
     .features .registration .masks .acc iframe{
         height: 300px;
     }
+    .features .registration .masks .acc figcaption{
+        font-size: 10px;
+        text-align: center;
+    }
     .features .registration .masks .rifg {
         padding: 10px;
         padding-bottom: 15px;
@@ -1307,6 +1305,10 @@ p{
     }
     .features .registration .masks .rifg iframe{
         height: 300px;
+    }
+    .features .registration .masks .rifg figcaption{
+        font-size: 10px;
+        text-align: center;
     }
     .features .localizer .first-row {
         display: flex;
