@@ -1089,6 +1089,13 @@ p{
     text-align: center;
     
 }
+.features .neurofeedback .nfb-slideshow-bg{
+    background-color: #e0e0e2;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 8px;
+    margin-top: 4%;
+}
 .features .neurofeedback .nfb-slideshow-container{
     max-width: 1000px;
     position: relative;
