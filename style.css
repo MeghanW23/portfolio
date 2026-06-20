@@ -13,6 +13,13 @@ h5 {
 html {
   scroll-behavior: smooth;
 }
+.working-page{
+    text-align: center;
+    padding: 20px;
+}
+.working-page h3{
+    font-size: 30px;
+}
 /*------ Home Page Header and Toggle Menu -----*/
 .header{
     min-height: 100vh;
