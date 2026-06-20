@@ -331,17 +331,80 @@
         </div>
     </div>
     <div class="localizer">
-        <h3><b>Localize Region of Interest (ROI)</b></h3>
-        <div class="first-row">
-            <p>
-                This pipeline localizes and creates a
-                mask of a brain region (within a given registered brain region)
-                based on activation from either the MSIT task or RIFG task. It
-                allows the experimenter to choose the threshold activation level
-                for voxels included in the outputted mask via visualization in
-                FSLeyes.
-            </p>
-            <img src="assets/localizer_demo.gif">
+        <h3><b>Localize Regions of Interest (ROI)</b></h3>
+        
+        <!-- Slideshow container -->
+        <div class="localizer-slideshow-bg">
+            <div class="first-row">
+                <p>
+                    The localizer script aims to localize and a create mask of a brain region 
+                    (within a given area) based on activation from either the MSIT task or RIFG task. 
+                    It several steps including: preprocessing data, computing task-related activation
+                    maps using GLM (General Linear Model) analyses, and mask creation via a watershed algorithm. 
+                    <br>
+                    <br>
+                    It also allows the experimenter to choose the threshold activation level for voxels included 
+                    in the outputted mask via visualization in FSLeyes.
+                </p>
+                <img src="assets/localizer_demo.gif">
+            </div>
+            <div class="localizer-slideshow-container">
+                <div class="local-slides fade">
+                    <div class="numbertext">1 of 13</div>
+                    <img src="assets/localizer_slides/slide1.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">2 of 13</div>
+                    <img src="assets/localizer_slides/slide2.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">3 of 13</div>
+                    <img src="assets/localizer_slides/slide3.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">4 of 13</div>
+                    <img src="assets/localizer_slides/slide4.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">5 of 13</div>
+                    <img src="assets/localizer_slides/slide5.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">6 of 13</div>
+                    <img src="assets/localizer_slides/slide6.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">7 of 13</div>
+                    <img src="assets/localizer_slides/slide7.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">8 of 13</div>
+                    <img src="assets/localizer_slides/slide8.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">9 of 13</div>
+                    <img src="assets/localizer_slides/slide9.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">10 of 13</div>
+                    <img src="assets/localizer_slides/slide10.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">11 of 13</div>
+                    <img src="assets/localizer_slides/slide11.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">12 of 13</div>
+                    <img src="assets/localizer_slides/slide12.png" style="width:100%">
+                </div>
+                <div class="local-slides fade">
+                    <div class="numbertext">13 of 13</div>
+                    <img src="assets/localizer_slides/slide13.png" style="width:100%">
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1, 'localizer')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'localizer')">&#10095;</a>
+            </div>
         </div>
     </div>
     <div class="neurofeedback">
@@ -479,11 +542,14 @@
     let slideIndices = {
         easyreg: 1,
         fnirt: 1,
-        nfb: 1
+        localizer: 1,
+        nfb: 1,
+        
     };
 
     showSlides(1, "easyreg");
     showSlides(1, "fnirt");
+    showSlides(1, "localizer");
     showSlides(1, "nfb");
 
     function plusSlides(n, slideshow) {
@@ -499,6 +565,8 @@
             slides = document.getElementsByClassName("easyreg-slides");
         } else if (slideshow === "fnirt") {
             slides = document.getElementsByClassName("fnirt-slides");
+        } else if (slideshow === "localizer") {
+            slides = document.getElementsByClassName("local-slides");
         } else {
             slides = document.getElementsByClassName("nfb-slides");
         }

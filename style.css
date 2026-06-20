@@ -873,6 +873,7 @@ p{
     display: flex;
     gap: 20px;
     padding: 30px;
+    padding-bottom: 50px;
     background-color: #e8e8ea;
     border-radius: 8px;
     margin-bottom: 5%;
@@ -960,6 +961,7 @@ p{
     width: 100%;
     display: flex;
     padding: 30px;
+    padding-bottom: 50px;
     gap: 20px;
     background-color: #e8e8ea;
     border-radius: 8px;
@@ -1104,7 +1106,6 @@ p{
     margin-right: 4%;
    
 }
-
 .features .neurofeedback p {
     padding-top: 10px;
 }
@@ -1231,31 +1232,112 @@ p{
     margin-left: 4%;
     margin-right: 4%;
 }
+.features .localizer h3{
+    font-size: 20px;
+    text-align: center;
+}
+.features .localizer-slideshow-bg{
+    background-color: #e8e8ea;
+    border-radius: 8px;
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 45px;
+    margin: auto;
+}
+
 .features .localizer .first-row{
     display: flex;
-    gap: 20px;
     background-color: #e8e8ea;
     border-radius: 8px;
     width: 100%;
     padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 40px;
+    gap: 20px;
 }
-.features .localizer h3{
-    font-size: 20px;
-    text-align: center;
+.features .localizer .first-row p{
+    padding-top: 20px;
+    padding-bottom: 50px;
     
 }
+
 .features .localizer .first-row img{
     padding: 15px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    width: 50%;
+    width: 65%;
+    height: 40%;
 }
 .features .localizer .first-row p{
+    margin-top:6%;
+}
+.features .localizer-slideshow-bg .localizer-slideshow-container{
+    width: 95%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    max-width: 1000px;
     margin: auto;
+}
+
+.features .localizer-slideshow-bg .localizer-slideshow-container p{
+     display: None;
+}
+.features .localizer-slideshow-bg .localizer-slideshow-container .local-slides {
+  display: none;
+}
+.features .localizer-slideshow-bg .localizer-slideshow-container .local-slides img{
+    border-radius: 8px;
+}
+.features .localizer-slideshow-bg .localizer-slideshow-container .local-slides .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.features .localizer-slideshow-bg .localizer-slideshow-container .prev,
+.features .localizer-slideshow-bg .localizer-slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+    z-index: 10;
+}
+
+.features .localizer-slideshow-bg .localizer-slideshow-container .prev {
+    left: 10px;
+}
+.features .localizer-slideshow-bg .localizer-slideshow-container .next {
+    right: 10px;
+}
+.features .localizer-slideshow-bg .localizer-slideshow-container .local-slides .prev:hover 
+.features .localizer-slideshow-bg .localizer-slideshow-container .local-slides .next:hover {
+  background-color: white;
+}
+.features .localizer-slideshow-bg .localizer-slideshow-container .local-slides .numbertext {
+  color: #000000;
+  font-size: 15px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 10px;
+  background-color: white;
+  border-radius: 8px 0px;
 }
 @media(max-width: 700px){
     .warning-for-mobile{
@@ -1349,18 +1431,28 @@ p{
         font-size: 10px;
         text-align: center;
     }
-    .features .localizer .first-row {
+    .features .localizer .localizer-slideshow-bg {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .features .localizer .localizer-slideshow-bg .first-row {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding: 0px;
 
     }
-    .features .localizer .first-row img{
+    .features .localizer .localizer-slideshow-bg .first-row p{
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .features .localizer .localizer-slideshow-bg .first-row img{
         padding: 5px;
         margin: auto;
         width: 90%;
+    }
+    .features .localizer .localizer-slideshow-bg .localizer-slideshow-container{
+        display: none;
     }
     .features .neurofeedback {
         display: flex;
