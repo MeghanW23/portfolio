@@ -744,6 +744,8 @@ p{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
+    width: 90%;
+    margin: auto;
 }
 .features h3{
     padding-bottom: 10px;
@@ -817,6 +819,7 @@ p{
     margin-top: 3%;
     margin-left: 4%;
     margin-right: 4%;
+    width: 90%;
 
 }
 .features .registration h3{
@@ -827,11 +830,11 @@ p{
     gap: 50px;    
 }
 .features .registration .options-container .registration-option-easyreg{
-    width: 100%;
+    width: 95%;
     display: flex;
     gap: 20px;
     padding: 30px;
-    background-color: #e0e0e2;
+    background-color: #e8e8ea;
     border-radius: 8px;
     margin-bottom: 5%;
 }
@@ -914,20 +917,12 @@ p{
   background-color: white;
   border-radius: 8px 0px;
 }
-.features .registration .options-container .registration-option-easyreg .easyreg-slideshow-container .easyreg-slides .fade {
-  animation-name: fade;
-  animation-duration: 0.25s;
-}
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 .features .registration .options-container .registration-option-fnirt{
-    width: 100%;
+    width: 95%;
     display: flex;
     padding: 30px;
     gap: 20px;
-    background-color: #e0e0e2;
+    background-color: #e8e8ea;
     border-radius: 8px;
     
 }
