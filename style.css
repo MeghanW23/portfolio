@@ -1467,6 +1467,112 @@ p{
     }
     
 }
+.features .vnc-docker-row{
+    display: flex;
+    gap: 8%;
+}
+.features .vnc-docker-row .vnc{
+    width: 40%;
+    margin-left: 7%;
+}
+.features .vnc-docker-row  .vnc h3{
+    font-size: 20px;
+    text-align: center;
+}
+.features .vnc-docker-row  .vnc .box{
+    background-color: #e0e0e2;
+    padding: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 8px;
+}
+.features .vnc-docker-row  .vnc .box .img_wrapper{
+    padding: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    margin: auto;
+}
+.features .vnc-docker-row  .vnc .box .img_wrapper img{
+    margin: auto;
+}
+.features .vnc-docker-row .docker {
+    width: 45%;
+    margin-right:7%;
+}
+.features .vnc-docker-row .docker h3{
+    font-size: 20px;
+    text-align: center;
+}
+.features .vnc-docker-row .docker p{
+    text-align: center;
+}
+.features .vnc-docker-row .docker .box{
+    background-color: #e0e0e2;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 8px;
+}
+.features .vnc-docker-row .docker .box p{
+    text-align: left;
+}
+.features .vnc-docker-row .docker .box .img_wrapper{
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);   
+    padding: 15px;
+    
+}
+.features .vnc-docker-row .docker .box .img_wrapper img{
+    width: 100%;
+}
+@media(max-width: 700px){
+    .features .vnc-docker-row{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .features .vnc-docker-row .vnc{
+        width: 90%;
+        margin: auto;
+    }
+    .features .vnc-docker-row .vnc .box{
+        padding: 5px;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    .features .vnc-docker-row .vnc .box .img_wrapper{
+        margin-top: 0%;
+        padding: 5%;
+    }
+    .features .vnc-docker-row .vnc .box .img_wrapper img{
+        width: 100%;
+    }
+    .features .vnc-docker-row .docker{
+        margin-right: 0%;
+        width: 90%;
+        margin: auto;
+    }
+    .features .vnc-docker-row .docker .box{
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .features .vnc-docker-row .docker .box .img_wrapper{
+        height: 300px;
+        padding-top: 25px;
+    }
+     .features .vnc-docker-row .docker .box .img_wrapper img {
+        height: 250px;
+    }
+    
+}
 /* ------- Neurofeedback Page: Project Overview ------- */
 .project-overview{
     text-align: left;
