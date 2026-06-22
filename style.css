@@ -1673,6 +1673,7 @@ p{
     margin-left: 25%;
     margin-top: 15%;
     border-radius: 8px;
+    word-wrap: break-word;
 }
 .citations h3{
     text-align: center;
