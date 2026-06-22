@@ -24,7 +24,7 @@ html {
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/home_background.jpeg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/home_page/home_background.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -446,7 +446,7 @@ p{
     min-height: 600px; /* adjust to taste */
     height: auto;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/about_background.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/about_page/about_background.png);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -647,7 +647,7 @@ p{
     min-height: 600px; /* adjust to taste */
     height: auto;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/bw_3d_movement_visualizer.gif);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/motion_page/bw_3d_movement_visualizer.gif);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -673,7 +673,7 @@ p{
     min-height: 600px; /* adjust to taste */
     height: auto;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/mri_photo.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/nfb_page/mri_photo.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
