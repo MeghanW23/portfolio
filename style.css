@@ -1464,8 +1464,7 @@ p{
     }
     .features .neurofeedback .graph iframe {
         display: none;
-    }
-    
+    } 
 }
 .features .vnc-docker-row{
     display: flex;
@@ -1527,7 +1526,6 @@ p{
     border-radius: 8px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);   
     padding: 15px;
-    
 }
 .features .vnc-docker-row .docker .box .img_wrapper img{
     width: 100%;
@@ -1570,8 +1568,73 @@ p{
     }
      .features .vnc-docker-row .docker .box .img_wrapper img {
         height: 250px;
+    }   
+}
+.features .gui{
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.features .gui h3{
+    font-size: 20px;
+    text-align: center;
+}
+.features .gui .box{
+    background-color: #e8e8ea;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+}
+.features .gui .box p{
+    width: 25%;
+    margin: auto;
+}
+.features .gui .box .outer-wrapper{
+    width: 75%;
+    gap: 2%;
+    display: flex;
+}
+.features .gui .box .outer-wrapper .figure-wrapper{
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+@media(max-width: 700px){
+    .features .gui{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 5%;
     }
-    
+    .features .gui .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .features .gui .box p{
+        width: 100%;
+    }
+    .features .gui .box .outer-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        gap: 12px;
+        margin-top: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .features .gui .box .outer-wrapper .figure-wrapper{
+        padding-left: 7px;
+        padding-right: 1px;
+        width: 95%;
+        margin: auto;
+    }
+    .features .gui .box .outer-wrapper .figure-wrapper img{
+        width: 95%;
+        margin: auto;
+    }
 }
 /* ------- Neurofeedback Page: Project Overview ------- */
 .project-overview{
