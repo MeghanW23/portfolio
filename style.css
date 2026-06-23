@@ -1600,31 +1600,6 @@ p{
     border-radius: 8px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
-.features .samba{
-    margin-top: 5%;
-    margin-left: 7%;
-    margin-right: 7%;
-}
-.features .samba h3{
-    font-size: 20px;
-    text-align: center;
-}
-.features .samba .box {
-    background-color: #e8e8ea;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    gap: 15px;
-}
-.features .samba .box p{
-    margin: auto;
-}
-.features .samba .box img{
-    padding: 15px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
 @media(max-width: 700px){
     .features .gui{
         display: flex;
@@ -1659,6 +1634,44 @@ p{
     .features .gui .box .outer-wrapper .figure-wrapper img{
         width: 95%;
         margin: auto;
+        height: 300px;
+    }
+}
+.features .samba{
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.features .samba h3{
+    font-size: 20px;
+    text-align: center;
+}
+.features .samba .box {
+    background-color: #e8e8ea;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+}
+.features .samba .box p{
+    margin: auto;
+}
+.features .samba .box img{
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+@media(max-width: 700px){
+    .features .samba .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .features .samba .box p{
+        padding-top: 5px;
+    }
+    .features .samba .box img{
+        height: 175px;
     }
 }
 /* ------- Neurofeedback Page: Project Overview ------- */
