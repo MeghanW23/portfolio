@@ -474,11 +474,12 @@ p{
     gap: 50px;
 }
 .section-one-text{
-    width: 50%;
+    width: 60%;
 }
 .section-one-text p{
     padding-bottom: 4%;
-    font-size: clamp(15px, 1vw, 30px)
+    font-size: clamp(15px, 1vw, 30px);
+    
 }
 .section-one .hero-btn{
     border: 1px solid black;
@@ -502,6 +503,7 @@ p{
     background: white;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    margin-top: 8%;
 }
 .section-one img:hover{
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
