@@ -644,32 +644,6 @@ p{
         padding-right: 30px;
     }
 }
-/* ------- Motion Page ------- */
-.motion-sub-header{
-    min-height: 600px; /* adjust to taste */
-    height: auto;
-    width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/motion_page/bw_3d_movement_visualizer.gif);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: white;
-    object-position: top;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;  /* so nav can be positioned inside it */
-
-}
-.motion-sub-header .text-box h1{
-    font-size: 50px;
-}
-@media(max-width: 700px){
-    .motion-sub-header .text-box h1{
-        font-size: 40px;
-    }
-}
 /* ------- Neurofeedback Page ------- */
 .neurofeedback-sub-header{
     min-height: 600px; /* adjust to taste */
@@ -690,7 +664,8 @@ p{
 }
 .neurofeedback-sub-header .text-box a{
     padding: 20px;
-    width: 20%
+    width: 20%;
+    margin-top: 2%;
 }
 /* ------- Neurofeedback Page: Introduction Section ------- */
 .introduction-section{
@@ -1726,4 +1701,35 @@ p{
         margin-top: 10%;
 
     }   
+}
+/* ------- Motion Page ------- */
+.motion-sub-header{
+    min-height: 600px; /* adjust to taste */
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/motion_page/bw_3d_movement_visualizer.gif);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    object-position: top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;  /* so nav can be positioned inside it */
+
+}
+.motion-sub-header .text-box h1{
+    font-size: 50px;
+}
+.motion-sub-header .text-box a{
+    margin-top: 1%;
+    padding: 20px;
+    width: 20%;
+}
+@media(max-width: 700px){
+    .motion-sub-header .text-box h1{
+        font-size: 40px;
+    }
 }
