@@ -702,7 +702,7 @@ p{
     padding-right: 70px;
 
 }
-.introduction-section .grants a{
+.introduction-section .grants .samuels-grant a{
     color: black;
     border-color: black;
     padding: 15px;
@@ -710,6 +710,24 @@ p{
     display: flex;
     margin: 30px auto;
 }
+.introduction-section .grants .interface-neuro a{
+    color: black;
+    border-color: black;
+    padding: 15px;
+    width: 60%;
+    display: flex;
+    margin: 40px auto;
+}
+.introduction-section .grants .ro1 .button a{
+    color: black;
+    border-color: black;
+    padding: 15px;
+    width: 60%;
+    display: flex;
+    margin: 30px auto;
+}
+
+
 .introduction-section .grants h5{
     text-align: center;    
     font-size: 18px;
@@ -738,6 +756,10 @@ p{
     background-color: #e8e8ea;
     padding: 15px;
     border-radius: 8px;
+}
+.introduction-section .grants .ro1 p a{
+    padding: 0px;
+    margin: 0px;
 }
 @media(max-width: 700px){
     .neurofeedback-sub-header .text-box h1{
