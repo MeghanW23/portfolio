@@ -183,6 +183,10 @@ p{
     .row{
         flex-direction: column;
     }
+    .project-col h3{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 .layer{
     background: #d4d4d6;
