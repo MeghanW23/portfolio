@@ -128,6 +128,11 @@
 </div>
 <div class="motion-char-section">
     <h3>Part One: Motion Characterization</h3>
+    <p>
+        I optimized and edited the Computational Radiology Lab's fMRI optimizers and software
+        for fMRI data in clinical populations from my lab's prospective studies. Below is 
+        the optimized pipeline.
+    </p>
     <div class="motion-slides-container-bg">
         <p><b>Please view this slideshow on a larger screen.</b></p>
         <div class="motion-slides-container">
@@ -295,7 +300,6 @@
             <a class="prev" onclick="plusSlides(-1, 'motion_char')">&#10094;</a>
             <a class="next" onclick="plusSlides(1, 'motion_char')">&#10095;</a>
         </div>
-
     </div>
     <div class="sms-mi-reg">
         <p>
@@ -304,8 +308,20 @@
             was developed by the Computational Radiology Laboratory.  
             The alignment of the slices and the volume is measured by mutual information.
             It is containerized in the docker image crl/sms-mi-reg.
+            I modified this optimizer to work on my labs' data, which has included 
+            optimizing step sizes, initialization methods,
+            optimizer types, and mutual information calculations.
+            <br><br>
+            <a 
+                href="https://github.com/ComputationalRadiology/sms-mi-reg" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="hero-btn">
+                <i class="fa fa-github"></i>Sms-Mi-Reg GitHub
+            </a>
         </p>
         <img src="assets/motion_page/sms-mi-reg_terminal.png">
+        
     </div>
     <div class="graph">
         <p>
@@ -334,6 +350,9 @@
     </div>
 </div>
 </div>
+<div class="motion-corr-section">
+    <h3>Part Two: Motion Correction</h3>
+</div>
 <!--------- Javascript for Slideshows -------->
 <script>
     let slideIndices = {
@@ -358,7 +377,6 @@
         slides[slideIndices[slideshow] - 1].style.display = "block";
     }
 </script>
-
 <!-------- Javascript for Mobile Toggle Menu ------->
 <script>
     var navLinks = document.getElementById("navLinks")
