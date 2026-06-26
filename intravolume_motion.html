@@ -41,6 +41,9 @@
 </div>
 </section>
 <div class="introduction">
+    <div class="note-for-mobile">
+        <p><b>FOR BETTER GRAPHICS AND MORE VISUALS, PLEASE VIEW ON A LARGER SCREEN</b></p>
+    </div>
     <p>
         Pharmacological fMRI (phMRI) is the primary tool for understanding how stimulant medications 
         work in the brain to treat ADHD. However, the findings across studies are strikingly inconsistent. 
@@ -86,7 +89,7 @@
     <div class="aims-wrapper">
         <div class="characterization">
             <div class="title">
-                <p><b>MOTION CHARACTERIZATION<br><br></b></p>
+                <p><b>Motion Characterization<br></b></p>
             </div>
             <p>
                 <br>I aim to characterize slice-by-slice level motion in 
@@ -103,7 +106,7 @@
         </div>
         <div class="correction">
             <div class="title">
-                <p><b>MOTION CORRECTION<br><br></b></p>
+                <p><b>Motion Correction<br></b></p>
             </div>
             <p>
                 <br>The standard way to handle motion-corrupted fMRI data is to censor the affected volumes, 
@@ -123,8 +126,10 @@
         </div>
     </div>
 </div>
-<div class="main_script">
+<div class="motion-char-section">
+    <h3>Part One: Motion Characterization</h3>
     <div class="motion-slides-container-bg">
+        <p><b>Please view this slideshow on a larger screen.</b></p>
         <div class="motion-slides-container">
             <div class="motion-slides fade">
                 <div class="numbertext">1 of 40</div>
@@ -291,6 +296,41 @@
             <a class="next" onclick="plusSlides(1, 'motion_char')">&#10095;</a>
         </div>
 
+    </div>
+    <div class="sms-mi-reg">
+        <p>
+            <b>SMS-MI-REG<br><br></b>
+            The volume-to-slice-group alignment software used in the motion characterization pipeline, sms-mi-reg, 
+            was developed by the Computational Radiology Laboratory.  
+            The alignment of the slices and the volume is measured by mutual information.
+            It is containerized in the docker image crl/sms-mi-reg.
+        </p>
+        <img src="assets/motion_page/sms-mi-reg_terminal.png">
+    </div>
+    <div class="graph">
+        <p>
+            <b>MOTION CHARACTERIZATION PIPELINE OUTPUTS</b>
+            <br><br>
+            The script outputs a directory of VersorRigid3DTransforms, one transform per aquisition.
+            Scripts are provided in the 
+            <a 
+                    href="https://github.com/MeghanW23/intravolume-motion-characterization-tools" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    GitHub
+            </a>
+             for calculating displacements between transforms 
+            and graphing the parameters and displacements of motion via interative 
+            <a 
+                    href="https://plotly.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    Plotly
+            </a> graphs.
+        </p>
+        <div class="graph-bg">
+            <iframe src="assets/motion_page/displacement_plots.html" style="border: none;"></iframe>
+        </div>
     </div>
 </div>
 </div>
