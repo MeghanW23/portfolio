@@ -1745,9 +1745,7 @@ p{
     min-height: 600px; /* adjust to taste */
     height: auto;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/motion_page/bw_3d_movement_visualizer.gif);
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/motion_page/samuels_grant.png);
     text-align: center;
     color: white;
     object-position: top;
@@ -2055,4 +2053,40 @@ p{
 }
 .motion-corr-section p{
     text-align: center;
+}
+/* ------- Undergraduate Page ------- */
+.undergrad-sub-header{
+    min-height: 600px; /* adjust to taste */
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    object-position: top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;  /* so nav can be positioned inside it */
+
+}
+.undergrad-sub-header .text-box h1{
+    font-size: 50px;
+}
+.undergrad-sub-header .text-box a{
+    margin-top: 1%;
+    padding: 20px;
+    width: 20%;
+}
+@media(max-width: 700px){
+    .undergrad-sub-header.text-box h1{
+        font-size: 40px;
+    }
+    .undergrad-sub-header .text-box a{
+        margin-top: 5%;
+        padding: 20px;
+        width: 50%;
+    }
 }
