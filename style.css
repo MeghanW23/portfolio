@@ -1102,9 +1102,14 @@ p{
 }
 .features .localizer{
     padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     margin-top: 5%;
-    margin-left: 4%;
-    margin-right: 4%;
+
 }
 .features .localizer h3{
     font-size: 20px;
@@ -1204,18 +1209,18 @@ p{
 }
 .features .neurofeedback{
     padding: 15px;
-    margin-top: 3%;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin: auto;
+    max-width: 1200px;
 }
 .features .neurofeedback p {
     padding-top: 10px;
+    
 }
 .features .neurofeedback h3{
     padding-left: 15px;
     font-size: 20px;
     text-align: center;
-    
+    margin-top: 6%;    
 }
 .features .neurofeedback .nfb-slideshow-bg{
     background-color: #e0e0e2;
@@ -1472,6 +1477,10 @@ p{
 .features .vnc-docker-row{
     display: flex;
     gap: 8%;
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .features .vnc-docker-row .vnc{
     width: 40%;
@@ -1574,9 +1583,10 @@ p{
     }   
 }
 .features .gui{
+    margin: auto;
     margin-top: 5%;
-    margin-left: 7%;
-    margin-right: 7%;
+    max-width: 1200px;
+    
 }
 .features .gui h3{
     font-size: 20px;
@@ -1641,9 +1651,11 @@ p{
     }
 }
 .features .samba{
+    margin: auto;
     margin-top: 5%;
-    margin-left: 7%;
-    margin-right: 7%;
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .features .samba h3{
     font-size: 20px;
