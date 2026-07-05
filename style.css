@@ -287,6 +287,11 @@ p{
     color: black;
     border: 1px solid black;
 }
+.button-row3 a{
+    padding: 20px;
+    width: 40%;
+    border-radius: 8px;
+}
 .button-row4 {
     margin-top: auto;
     display: flex;
