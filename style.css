@@ -1753,7 +1753,9 @@ p{
     min-height: 600px; /* adjust to taste */
     height: auto;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/motion_page/samuels_grant.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/motion_page/background.png);
+    background-position: center;
+    background-size: cover;
     text-align: center;
     color: white;
     object-position: top;
@@ -1762,7 +1764,6 @@ p{
     align-items: center;
     justify-content: center;
     position: relative;  /* so nav can be positioned inside it */
-
 }
 .motion-sub-header .text-box h1{
     font-size: 50px;
