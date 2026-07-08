@@ -24,7 +24,7 @@ html {
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/home_page/home_background-for-desktop.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/home_page/home_background.png);
     background-position: center;
     position: relative;
 }
@@ -179,9 +179,6 @@ p{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4); 
 }
 @media(max-width: 700px) {
-    .header{
-        background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/home_page/home_background-for-desktop.png);
-    }
     .row{
         flex-direction: column;
     }
@@ -458,7 +455,7 @@ p{
     min-height: 600px; /* adjust to taste */
     height: auto;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/home_page/home_background-for-desktop.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)),url(assets/about_page/about_background.png);
     background-size: cover;
     text-align: center;
     color: white;
