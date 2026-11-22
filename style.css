@@ -2188,8 +2188,6 @@ p{
     border-radius: 8px;
     margin: auto;
     margin-bottom: 2%;
-
-    
 }
 .motion-corr .motion-corr-text p{
     padding-left: 10%;
@@ -2212,7 +2210,20 @@ p{
 .motion-corr .motion-corr-citations p{
     margin: auto;
     padding-bottom: 2%;
-    
+}
+@media(max-width: 700px){
+    .motion-corr img{
+        width: 95%;
+        margin-bottom: 5%;
+    }
+    .motion-corr .motion-corr-citations{
+        width: 95%;
+    }
+    .motion-corr .motion-corr-citations p{
+        font-size: 12px;
+        padding-bottom: 5%;
+        overflow-wrap: break-word;
+    }
 }
 /* ------- Undergraduate Page ------- */
 .undergrad-sub-header{
@@ -2297,7 +2308,6 @@ p{
     max-width: 1000px;
     margin: auto;
     margin-top: 5%;
-
 }
 .ug-project1 h3{
     font-size: 20px;
