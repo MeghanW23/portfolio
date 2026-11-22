@@ -2396,6 +2396,11 @@ p{
     justify-content: center;
 
 }
+.ug-project2 .proj2-row1 .manuscript-in-progress{
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-bottom: 1%;
+}
 .ug-project2 .proj2-row2{
     display: flex;
     margin-top: 3%;
