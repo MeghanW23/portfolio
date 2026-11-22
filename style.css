@@ -22,7 +22,7 @@ html {
 }
 /*------ Home Page Header and Toggle Menu -----*/
 .header{
-    min-height: 100vh;
+    min-height: 120vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.832)),url(assets/home_page/home_background.png);
     background-position: center;
@@ -338,6 +338,13 @@ p{
     }
     .text-box{
         width: 100%;
+        padding-top: 60%;
+    }
+    .text-box h2{
+        font-size: 25px;
+    }
+    .text-box p{
+        padding-top: 3%;
     }
     .nav-links ul li {
         display: block;
