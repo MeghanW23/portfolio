@@ -1909,7 +1909,7 @@ p{
     padding-bottom: 20%;
     padding-top: 20%;
     color: white;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url("/Users/meghan/portfolio/assets/motion_page/motion-char-button.png");
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url("assets/motion_page/motion-char-button.png");
     background-position: center;
     background-size: cover;
     border: 10px solid white;
@@ -1922,7 +1922,7 @@ p{
     padding-bottom: 20%;
     padding-top: 20%;
     color: white;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url("/Users/meghan/portfolio/assets/motion_page/motion-corr-button.png");
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url("assets/motion_page/motion-corr-button.png");
     background-position: center;
     background-size: cover;
     border: 10px solid white;
