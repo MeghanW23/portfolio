@@ -40,344 +40,258 @@
     </div>
 </div>
 </section>
-<div class="introduction">
-    <div class="note-for-mobile">
-        <p><b>FOR BETTER GRAPHICS AND MORE VISUALS, PLEASE VIEW ON A LARGER SCREEN</b></p>
+<!-------- Introduction ------->
+<section class="publication">
+    <div class="title">
+        <p>Manuscript in Progress</p>
     </div>
     <p>
-        Pharmacological fMRI (phMRI) is the primary tool for understanding how stimulant medications 
-        work in the brain to treat ADHD. However, the findings across studies are strikingly inconsistent. 
-        A key reason may be hiding in plain sight: stimulants reduce hyperactivity, which reduces head movement 
-        in the scanner. This means that "off vs. on medication" comparisons likely capture differences in motion 
-        artifact as much as, or more than, real changes in brain activity. The field has acknowledged this as a 
-        limitation but no prior study has measured it or corrected for it.
+        Walsh,  M.E., Auger,  J., Balachandrasekaran, A., Gholipour, A., Heras, S., Cohen, A.L. & Warfield, S. (2026). Slice-wise characterization and low-rank recovery of intra-volume head motion in simultaneous multi-slice fMRI.
     </p>
-    <p><br>
-        This project directly addresses the motion confound using a novel slice-by-slice motion correction 
-        tool. Standard correction methods treat each MRI volume as if it were captured in a single instant, but 
-        participants can move within a volume acquisition, and in ADHD, they frequently do. Our algorithm corrects 
-        motion at the level of individual slice groups rather than whole volumes, capturing within-volume jitter that 
-        standard methods miss. By comparing findings with and without this superior correction, we can separate true 
-        treatment effects from motion artifacts and begin to identify accurate neuroanatomical targets for ADHD intervention.
-    </p>
-    <p><br>
-        Under the mentorship of
-        <a 
-            href="https://research.childrenshospital.org/researchers/simon-k-warfield" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            Simon Warfield,
-        </a>
-        and in collaboration with his
-        <a 
-            href="http://www.crl.med.harvard.edu/" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            Computational Radiology Laboratory
-        </a>, 
-        I am working to characterize and correct head motion artifacts in neuroimaging data 
-        from my own lab's ADHD and ASD cohorts in order to reconcile inconsistent findings 
-        across the neuroimaging literature, identify reliable neuroanatomical targets for 
-        neuromodulatory intervention, and ultimately develop robust biomarkers of treatment 
-        response that can guide more precise, personalized care.
-        <br><br><br>
-        This project can be broken down into two parts:
-    </p>
-</div>
-<div class="aims">
-    <br><br></p>
-    <div class="aims-wrapper">
-        <div class="characterization">
-            <div class="title">
-                <p><b>Motion Characterization<br></b></p>
-            </div>
-            <p>
-                <br>I aim to characterize slice-by-slice level motion in 
-                <a 
-                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4915494/" 
-                    target="_blank" 
-                    rel="noopener noreferrer">
-                    SMS-Accelerated
-                </a>
-                fMRI datasets.<br><br>I am implementing and modifying the Computational Radiology Laboratory's
-                motion characterization software toward characterizing slice-by-slice level motion in my own lab's
-                fMRI data from  ADHD and ASD participants.
-            </p>
+</section>
+<section class="motion-introduction">
+    <div class="intro-paragraph">
+        <div class="workflow-image">
+            <img src="assets/motion_page/workflow.png">
         </div>
-        <div class="correction">
-            <div class="title">
-                <p><b>Motion Correction<br></b></p>
-            </div>
-            <p>
-                <br>The standard way to handle motion-corrupted fMRI data is to censor the affected volumes, 
-                but this creates signal discontinuities that can distort results.<br><br>The 
-                <a 
-                    href="https://pubmed.ncbi.nlm.nih.gov/34432631/" 
-                    target="_blank" 
-                    rel="noopener noreferrer">
-                     Structured Matrix Completion Approach
-                </a>
-                developed by the Computational Radiology Laboratory
-                reconstructs what the signal should have looked like.
-                <br><br>I aim to implement this matrix completion approach to correct for 
-                slice-by-slice level motion in my own labs' own data. 
-            </p>
-
-        </div>
-    </div>
-</div>
-<div class="motion-char-section">
-    <h3>Part One: Motion Characterization</h3>
-    <p>
-        I optimized and edited the Computational Radiology Lab's fMRI optimizers and software
-        for fMRI data in clinical populations from my lab's prospective studies. Below is 
-        the optimized pipeline.
-    </p>
-    <div class="motion-slides-container-bg">
-        <p><b>Please view this slideshow on a larger screen.</b></p>
-        <div class="motion-slides-container">
-            <div class="motion-slides fade">
-                <div class="numbertext">1 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-01.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">2 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-02.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">3 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-03.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">4 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-04.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">5 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-05.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">6 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-06.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">7 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-07.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">8 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-08.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">9 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-09.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">10 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-10.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">11 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-11.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">12 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-12.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">13 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-13.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">14 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-14.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">15 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-15.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">16 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-16.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">17 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-17.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">18 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-18.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">19 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-19.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">20 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-20.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">21 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-21.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">22 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-22.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">23 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-23.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">24 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-24.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">25 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-25.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">26 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-26.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">27 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-27.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">28 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-28.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">29 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-29.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">30 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-30.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">31 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-31.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">32 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-32.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">33 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-33.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">34 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-34.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">35 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-35.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">36 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-36.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">37 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-37.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">38 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-38.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">39 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-39.png" style="width:100%">
-            </div>
-            <div class="motion-slides fade">
-                <div class="numbertext">40 of 40</div>
-                <img src="assets/motion_page/motion_char_slides/motion-char-slides-40.png" style="width:100%">
-            </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1, 'motion_char')">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 'motion_char')">&#10095;</a>
-        </div>
-    </div>
-    <div class="sms-mi-reg">
         <p>
-            <b>SMS-MI-REG<br><br></b>
-            The volume-to-slice-group alignment software used in the motion characterization pipeline, sms-mi-reg, 
-            was developed by the Computational Radiology Laboratory.  
-            The alignment of the slices and the volume is measured by mutual information.
-            It is containerized in the docker image crl/sms-mi-reg.
-            I modified this optimizer to work on my labs' data, which has included 
-            optimizing step sizes, initialization methods,
-            optimizer types, and mutual information calculations.
+            In simultaneous multi-slice (SMS) functional magnetic resonance imaging (fMRI), 
+            head motion occurring between sequential slice-group acquisitions can introduce 
+            artifacts within individual volumes that conventional volume-wise correction may 
+            not detect.
             <br><br>
+            Here, we developed a pipeline to characterize intra-volume head motion and 
+            recover affected slice groups using low-rank matrix completion, comparing its 
+            performance with conventional volume-wise motion correction in an 
+            attention-deficit/hyperactivity disorder (ADHD) pharmaco-fMRI cohort.
+            <br><br>
+            We estimated motion at slice-group temporal resolution using rigid-body registration, 
+            flagged motion-affected slice groups using a data-driven threshold, and recovered 
+            censored data through structured low-rank matrix completion.
+            <br><br>
+            We evaluated the resulting data against raw and volume-wise corrected data using 
+            temporal signal-to-noise ratio (tSNR) and seed-based functional connectivity, and 
+            assessed the prevalence of flagged slice groups among volumes not flagged by 
+            conventional framewise displacement (FD), a measure of head motion estimated from 
+            successive volume-wise realignment parameters.
+            <br><br>
+            Our findings indicate that intra-volume motion is a measurable source of artifact not 
+            fully captured by conventional volume-wise methods and that slice-wise recovery may 
+            improve data quality while retaining volumes that would otherwise be censored, warranting 
+            further validation of its effects on functional connectivity and clinical inferences.
+        </p>
+        
+    </div>
+</section>
+<!-------- Section Button Section --------->
+<section class="section-button-section">
+    <h3>This project can be divided into two parts:</h3>
+    <div class="buttons">
+            <a href="#motion-char">
+                <div class="motion-char-button">
+                    <h3>Motion Characterization</h3>
+                </div>
+            </a>
+            <a href="#motion-corr">
+                <div class="motion-corr-button">
+                    <h3>Motion Correction</h3>
+                </div>
+            </a>
+    </div>
+</section>
+<!-------- Motion Characterization Section -------->
+<section id="motion-char" class="motion-char">
+    <h3>
+        Motion Characterization
+    </h3>
+    <div class="ref-vol-selection">
+        <h4>Reference Volume Selection</h4>
+        <hr>
+        <div class="non-text-elements">
+            <div class="py-image">
+                <a 
+                    href="https://github.com/MeghanW23/intravolume_motion_pipeline/blob/main/scripts/identify_reference_volume.py"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    >
+                    <img 
+                        src="assets/motion_page/ref-vol-example.png"
+                    >
+                </a>
+            </div>
+            <div class="py-button">
+                <a 
+                    href="https://github.com/MeghanW23/intravolume_motion_pipeline/blob/main/scripts/identify_reference_volume.py" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="hero-btn">
+                    <i class="fa fa-github"></i>Reference Volume Selection Script
+                </a>
+            </div>
+        </div>
+        <p>
+            <br><br>
+            It is important to select a reference volume that is motion-free, 
+            as selecting a reference volume with motion leads to a potentially 
+            inaccurate alignment between the reference volume and each slice group 
+            it is aligned to.
+            <br><br>
+            1. <b>Our reference volume selection script upsamples each 3D volume in the timeseries</b>. 
+            For our data's 2.4 mm isotropic voxels, upsampling to 1.236 mm isotropic increases the 
+            spatial sampling density, which helps the registration  algorithm estimate subvoxel 
+            translations and rotations more precisely. This is particularly relevant because the 
+            goal is to detect subtle motion between slice groups that may be smaller than the 
+            original voxel dimensions. 
+            <br><br>
+            2. To reduce the influence of ghost artifacts, which appear as spurious signal 
+            replicas caused by imperfect MRI acquisition and reconstruction, and unusually high-intensity 
+            voxels, which may arise from localized signal anomalies or reconstruction artifacts, <b>voxel 
+            intensities in each volume were clipped to the range of 50-1000 arbitrary intensity units (AIU)</b>. 
+            <br><br>
+            3. For each slice group in a given 3D volume, <b>we registered the group to its upsampled, 
+            intensity-limited parent volume</b> and <b>calculated its displacement relative to the identity transform</b> of 
+            the reference volume, which represents the absence of translation or rotation from the reference 
+            volume's original coordinate system. 
+            <br><br>
+            4. In order to make sure our reference volume is motion-free, <b>we select the upsampled and 
+            voxel-limited 3D volume that has the smallest maximum slice-group-to-volume displacement</b>. 
+        </p>
+    </div>
+    <div class="registration-procedure">
+        <h4>Registration Procedure</h4>
+        <hr>
+        <div class="reg-button-box">
             <a 
-                href="https://github.com/ComputationalRadiology/sms-mi-reg" 
+                href="https://github.com/MeghanW23/intravolume_motion_pipeline/blob/main/scripts/MotionCharacterization/__main__.py" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 class="hero-btn">
-                <i class="fa fa-github"></i>Sms-Mi-Reg GitHub
+                <i class="fa fa-github"></i>Main Motion Characterization Script
             </a>
-        </p>
-        <img src="assets/motion_page/sms-mi-reg_terminal.png">
-        
-    </div>
-    <div class="graph">
-        <p>
-            <b>MOTION CHARACTERIZATION PIPELINE OUTPUTS</b>
-            <br><br>
-            The script outputs a directory of VersorRigid3DTransforms, one transform per aquisition.
-            Scripts are provided in the 
             <a 
-                    href="https://github.com/MeghanW23/intravolume_motion_pipeline" 
+                href="https://github.com/ComputationalRadiology/sms-mi-reg/blob/main/retro-motion-measurement.cxx" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="hero-btn">
+                <i class="fa fa-github"></i>Registration Optimizer
+            </a>
+            <a 
+                href="https://github.com/MeghanW23/intravolume_motion_pipeline/blob/main/scripts/calculate_displacements.py" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="hero-btn">
+                <i class="fa fa-github"></i>Displacement Calculation Script
+            </a>
+        </div>
+        <div class="reg-text-box">
+            <iframe src="assets/motion_page/displacement_trace.html" style="border: none;"></iframe>
+            <p>
+                To characterize intra-volume movement between successive slice-group acquisitions, we performed 
+                six-degree-of-freedom (6-DOF) rigid-body registration of the selected reference volume to each 
+                slice group. 
+                <br><br>
+                An <a 
+                    href="https://github.com/ComputationalRadiology/sms-mi-reg/blob/main/retro-motion-measurement.cxx"
                     target="_blank" 
                     rel="noopener noreferrer">
-                    GitHub
-            </a>
-             for calculating displacements between transforms 
-            and graphing the parameters and displacements of motion via interative 
-            <a 
-                    href="https://plotly.com/" 
+                    optimization procedure
+                </a> 
+                identified the rigid-body transformation that maximized mutual information between the reference 
+                volume and each slice group, using statistical dependence between image intensities as a measure of 
+                alignment. This yielded six motion parameters for each slice group: three translations along the x-, 
+                y-, and z-axes and three rotations about these axes. 
+                <br><br>
+                We quantified motion between successive slice-group acquisitions by  
+                <a 
+                    href="https://github.com/MeghanW23/intravolume_motion_pipeline/blob/main/scripts/calculate_displacements.py"
                     target="_blank" 
                     rel="noopener noreferrer">
-                    Plotly
-            </a> graphs.
-        </p>
-        <div class="graph-bg">
-            <iframe src="assets/motion_page/displacement_plots.html" style="border: none;"></iframe>
+                    calculating the displacement
+                </a> 
+                between their respective motion parameter estimates, producing a motion trace at slice-group 
+                temporal resolution. This trace provides finer temporal characterization of head motion than 
+                conventional volume-wise estimates and enables detection of motion occurring within individual 
+                volumes. 
+                <br><br>
+                By aggregating slice-group motion estimates at the volume level, we also derived a 
+                slice-wise-informed framewise displacement (FD) measure that captures motion between successive 
+                acquisitions at a finer temporal scale than conventional FD. This provides a complementary motion 
+                metric that can be evaluated independently of slice-group recovery.
+            </p>
         </div>
     </div>
-</div>
-</div>
-<div class="motion-corr-section">
-    <h3>Part Two: Motion Correction</h3>
-    <p><b>I am currently working on ways of visualizing the motion correction tools. Please come back later.</b></p>
-</div>
-<!--------- Javascript for Slideshows -------->
-<script>
-    let slideIndices = {
-        motion_char: 1,
-        
-    };
-    showSlides(1, "motion_char");
-    function plusSlides(n, slideshow) {
-        slideIndices[slideshow] += n;
-        showSlides(slideIndices[slideshow], slideshow);
-    }
-    function showSlides(n, slideshow) {
-        let slides;
-        if (slideshow === "motion_char") {
-            slides = document.getElementsByClassName("motion-slides");
-        }
-        if (n > slides.length) slideIndices[slideshow] = 1;
-        if (n < 1) slideIndices[slideshow] = slides.length;
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndices[slideshow] - 1].style.display = "block";
-    }
-</script>
+    <div class="thresholding">
+        <h4>Thresholding and Motion Flagging </h4>
+        <hr>
+        <div class="thresholding-non-text">
+            <a 
+                href="https://github.com/MeghanW23/intravolume_motion_pipeline/blob/main/scripts/determine_motion_threshold.py" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                <img src="assets/motion_page/thresholding.png">
+            </a>
+            <div class="thresholding-button">
+                <a 
+                    href="https://github.com/MeghanW23/intravolume_motion_pipeline/blob/main/scripts/determine_motion_threshold.py" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="hero-btn">
+                    <i class="fa fa-github"></i>Motion Thresholding Script
+                </a>
+            </div>
+        </div>
+        <p>
+            Any 3D volumes containing one or more slice groups determined to have above-threshold 
+            intravolume motion is flagged for motion-scrubbing during the
+            <a href="#motion-corr">motion correction step</a>.
+            <br><br>
+            To determine a suitable millimeter threshold, we first calculate a histogram of 
+            the number of volumes that exceed a threshold, for each threshold, between the millimeter 
+            threshold that flags all volumes, to the millimeter threshold that flags no volumes.
+            <br><br>
+            Then, we find the threshold that corresponds to 20% of the data being excluded. From the 
+            remaining 80% of volumes, we calculate a mean and standard deviation. We calculate a potential 
+            threshold via the following calculation: μ + ( x 2). 
+            <br><br>
+            If this value is less than 5% of the diameter of a single voxel, we instead use the millimeter 
+            value of 5% of the diameter of a single voxel of the threshold. Similarly, if this value is larger 
+            than 300% of the diameter of a single voxel, we instead use the millimeter value of 300% of the 
+            diameter of a single voxel. 
+        </p>
+    </div>
+</section>
+<!-------- Motion Characterization Section -------->
+<section id="motion-corr" class="motion-corr">
+    <h3>Motion Correction</h3>
+    <img src=assets/motion_page/carpet-plot.png>
+    <div class="motion-corr-text">
+        <p>
+            The goal of our intra-volume motion correction is to recover data corrupted/removed at the 
+            slice-group level without discarding whole volumes, using the low-rank matrix completion approach 
+            (Balachandrasekaran et al., 2022). In this approach, motion-corrupted slice groups are treated as 
+            missing entries in a structured data matrix. Recovery is posed as completion of a super-resolved matrix 
+            from the observed (uncensored) measurements. The structured matrix is built from the time series and low 
+            rank is enforced to regularize the recovery. Recovery is performed at fine temporal resolution, so 
+            slice-timing correction is effectively achieved as part of the reconstruction.
+            <br><br>
+            The corrected data is preprocessed with fMRIPrep version 23.1.3 and analyzed with Nilearn's 
+            single-subject seed-based connectivity example, unmodified (Esteban et al., 2019, Nilearn 
+            contributors, n.d).
+        </p>
+    </div>
+    <div class="motion-corr-citations">
+        <h5>Citations</h5>
+        <p>
+            Balachandrasekaran, A., Cohen, A. L., Afacan, O., Warfield, S. K., & Gholipour, A. (2022). Reducing the Effects of Motion Artifacts in fMRI: A Structured Matrix Completion Approach. IEEE Transactions on Medical Imaging, 41(1), 172–185.
+        </p>
+        <p>
+            Esteban, O., Markiewicz, C. J., Blair, R. W., Moodie, C. A., Isik, A. I., Erramuzpe, A., Kent, J. D., Goncalves, M., DuPre, E., Snyder, M., Oya, H., Ghosh, S. S., Wright, J., Durnez, J., Poldrack, R. A., & Gorgolewski, K. J. (2019). fMRIPrep: a robust preprocessing pipeline for functional MRI. Nature Methods, 16(1), 111–116. https://doi.org/10.1038/s41592-018-0235-4
+        </p>
+        <p>
+            Nilearn contributors. (n.d.). Producing single subject maps of seed-to-voxel correlation. Nilearn. https://nilearn.github.io/dev/auto_examples/03_connectivity/plot_seed_to_voxel_correlation.html
+        </p>
+    </div>
+</section>
 <!-------- Javascript for Mobile Toggle Menu ------->
 <script>
     var navLinks = document.getElementById("navLinks")

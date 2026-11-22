@@ -1793,7 +1793,7 @@ p{
     position: relative;
 }
 .motion-sub-header .text-box h1{
-    font-size: 50px;
+    font-size: 35px;
 }
 .motion-sub-header .text-box a{
     margin-top: 1%;
@@ -1810,285 +1810,409 @@ p{
         width: 50%;
     }
 }
-.introduction{
-    text-align: left;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
+/* ------- Motion Page: Introduction ------- */
+.publication {
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    padding: 2%;
 }
-.introduction .note-for-mobile{
+.publication .title p{
     text-align: center;
-    padding: 30px;
-    display: none;
+    padding-bottom: 15px;
 }
-.introduction p{
-    font-size: 18px;
+.motion-introduction {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4%;
+    padding-bottom: 3%;
 }
-.introduction a{
-    text-decoration: none;
+.motion-introduction p{  
+    font-size: 15px;
 }
-.aims{
-    margin-top: 1%;
-    padding-left: 100px;
-    padding-right: 100px;
+.motion-introduction .intro-paragraph p{
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
 }
-.aims p{
-    font-size: 16px;
+.motion-introduction .workflow-image{
+    text-align: center;
 }
-.aims a{
-    text-decoration: none;
-}
-.aims .aims-wrapper{
-    display: flex;
-    gap: 80px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 0%;
-    justify-content: center;
-}
-.aims .aims-wrapper .characterization{
-    width: 35%;
-    background-color: #e8e8ea;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+.motion-introduction .workflow-image img{
+    width: 60%;
     border-radius: 8px;
-}
-.aims .aims-wrapper .characterization .title p{
-    text-align: center;
-    font-size: 18px;
-}
-.aims .aims-wrapper .correction{
-    width: 35%;
-    background-color: #e8e8ea;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 8px;
-}
-.aims .aims-wrapper .correction p{
-    padding-bottom: 20px;
-}
-.aims .aims-wrapper .correction .title p{
-    text-align: center;
-    font-size: 18px;
-    padding-bottom: 0px;
+    border: 10px solid white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1%;
+    margin-left: 1%;
+    align-items: center;
+    float: right;
 }
 @media(max-width: 700px){
-    .introduction{
+    .publication{
+        width: 100%;
+    }
+    .publication .title p{
         text-align: left;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 30px;
     }
-    .introduction .note-for-mobile{
-        display: block;
+    .publication p{
+        padding-left: 10%;
+        padding-right: 10%;
     }
-    .aims{
-        margin-top: 3%;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .aims .aims-wrapper{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .aims .aims-wrapper .characterization{
+    .motion-introduction .intro-paragraph p{
         width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 5%;
     }
-    .aims .aims-wrapper .correction{
+    .motion-introduction .workflow-image img{
         width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
+        margin-bottom: 5%;
     }
 }
-.motion-char-section h3{
-    font-size: 25px;
+/* ------- Motion Page: Section Buttons ------- */
+.section-button-section{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #cdcdd0;
+}
+.section-button-section h3{
     text-align: center;
-    margin-top: 5%;
+    font-weight: normal;
 }
-.motion-char-section p{
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-.motion-char-section .motion-slides-container-bg {
-    background-color: #e8e8ea;
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    padding: 20px;
-    border-radius: 15px;
-}
-.motion-char-section .motion-slides-container-bg p{
-    text-align: center;
-    padding: 20px;
-    display: none;
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container{
-    position: relative;
-    width: 100%;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container p{
-    display: None;
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container .motion-slides {
-    display: none;
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container .motion-slides img{
-    border-radius: 8px;
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container {
-    position: relative;
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container .prev,
-.motion-char-section .motion-slides-container-bg .motion-slides-container .next{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    padding: 16px;
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-    z-index: 100;
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container .prev {
-    left: 10px;
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container .next {
-    right: 10px;
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container .prev:hover{
-    background-color: white;
-    border-radius: 0px 8px  8px 0px;
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container .next:hover{
-    background-color: white;
-    border-radius: 8px 0px 0px 8px;
-}
-.motion-char-section .motion-slides-container-bg .motion-slides-container .motion-slides .numbertext {
-  color: #000000;
-  font-size: 15px;
-  padding: 10px 14px;
-  position: absolute;
-  top: 10px;
-  background-color: white;
-  border-radius: 8px 0px;
-  opacity: 0.75;
-}
-.motion-char-section .sms-mi-reg {
-    background-color: #e8e8ea;
-    padding-top: 35px;
-    padding-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 5%;
-    margin-right: 5%;
-    border-radius: 8px;
+.section-button-section .buttons{
     display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 2%;
 }
-.motion-char-section .sms-mi-reg p {
-    margin: auto;
-    padding: 0px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 30px;
-    text-align: left;
+.section-button-section .buttons h3{
+    font-size: 24px;
 }
-.motion-char-section .sms-mi-reg  p a{
-    border: 1px solid black;
+.section-button-section .buttons a{
+    width: 40%;
+    text-decoration: none;
     color: black;
-    margin-left: 14%;
-    margin-top: 3%;
-    padding: 20px;
-    width: 60%;
-    align-items: center;
+}
+.section-button-section .buttons .motion-char-button{
+    padding: 5%;
+    border-radius: 8px;
+    justify-content: center;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    color: white;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url("/Users/meghan/portfolio/assets/motion_page/motion-char-button.png");
+    background-position: center;
+    background-size: cover;
+    border: 10px solid white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+.section-button-section .buttons .motion-corr-button{
+    padding: 5%;
+    border-radius: 8px;
+    justify-content: center;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    color: white;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url("/Users/meghan/portfolio/assets/motion_page/motion-corr-button.png");
+    background-position: center;
+    background-size: cover;
+    border: 10px solid white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+.section-button-section .buttons .motion-char-button:hover{
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+.section-button-section .buttons .motion-corr-button:hover{
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+@media(max-width: 700px){
+    .section-button-section .buttons a{
+        width: 100%;
+        text-decoration: none;
+        color: black;
+    }
+    .section-button-section .buttons{
+        padding-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .section-button-section .buttons h3{
+        font-size: 23px;
+    }
+    .section-button-section .buttons .motion-char-button{
+        width: 100%;
+        padding: 12%;
+        height: 150px;
+    }
+    .section-button-section .buttons .motion-corr-button{
+        width: 100%;
+        padding: 12%;
+        height: 150px;
+    }
+}
+/* ------- Motion Page: Motion Characterization ------- */
+.motion-char{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.motion-char h3{
+    text-align: center;
+    padding-bottom: 1%;
+    font-size: 30px;
+    width: 100%;
+}
+/* ------- Motion Page: Motion Characterization - Ref Vol Selection ------- */
+.motion-char .ref-vol-selection{
+    padding-top: 2%;
+}
+.motion-char .ref-vol-selection h4{
+    font-weight: normal;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+.motion-char .ref-vol-selection hr{
+    margin-bottom: 2%;
+}
+.motion-char .ref-vol-selection p{
+    font-size: 15px;
+    color: black;
+    padding: 0px;
+    margin-top: -4%; /* adjust to taste */
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.motion-char .ref-vol-selection .non-text-elements {
+    float: right;
+    margin: 0 0 10px 25px; /* space between image and text */
+    display: flex;
+    flex-direction: column;
 
 }
-.motion-char-section .sms-mi-reg img{
-    width: 70%;
+.motion-char .ref-vol-selection .non-text-elements .py-image img{
+    height: 500px;
+    padding: 1%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
     border-radius: 8px;
-}
-.motion-char-section .graph{
-    background-color: #e8e8ea;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    padding: 30px;
-    border-radius: 8px;
-}
-.motion-char-section .graph a{
-    text-decoration: none;
-}
-.motion-char-section .graph p{
-    padding: 30px;
-}
-.motion-char-section .graph .graph-bg{
-    width: 100%;
-    height: 700px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-.motion-char-section .graph .graph-bg  iframe{
-    width: 100%;
-    height: 670px;
+    padding-bottom: 2%;
     
 }
+.motion-char .ref-vol-selection .non-text-elements .py-button{
+    margin: auto;
+    padding: 3%;
+    margin-top: -6%;
+
+}
+.motion-char .ref-vol-selection .non-text-elements .py-button a{
+    color: black;
+    border-color: white;
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding-top: 8%;
+    padding-bottom: 8%;   
+}
+.motion-char .ref-vol-selection .non-text-elements:hover .py-image img{
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+.motion-char .ref-vol-selection .non-text-elements:hover .py-button a{
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
 @media(max-width: 700px){
-    .motion-char-section p{
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 10px;
-        padding-top: 10px;
+    .motion-char .ref-vol-selection .non-text-elements{
+        width: 100%;
     }
-    .motion-char-section .motion-slides-container-bg{
-        display: none;
+    .motion-char .ref-vol-selection .non-text-elements .py-image img{
+        width: 100%;
+        height: 50%;
     }
-    .motion-char-section .sms-mi-reg{
+}
+/* ------- Motion Page: Motion Characterization - Registration Procedure ------- */
+.motion-char .registration-procedure {
+    padding-top: 4%;
+}
+.motion-char .registration-procedure h4{
+    font-weight: normal;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+.motion-char .registration-procedure hr{
+    margin-bottom: 2%;
+}
+.motion-char .registration-procedure .reg-button-box{
+    text-align: center;
+}
+.motion-char .registration-procedure .reg-button-box a{
+    color: black;
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+    width: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+.motion-char .registration-procedure .reg-button-box a:hover{
+    border: 1px solid #959597;
+    background: #959597;
+    transition: 1s;
+}
+.motion-char .registration-procedure .reg-text-box{
+    align-items: center;
+    margin-top: 3%;
+}
+.motion-char .registration-procedure .reg-text-box p{
+    font-size: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.motion-char .registration-procedure .reg-text-box a{
+    text-decoration: none;
+}
+.motion-char .registration-procedure .reg-text-box iframe{
+    width: 70%;
+    height: 650px;
+    float: right;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    margin-left: 2%;
+}
+@media(max-width: 700px){
+    .motion-char .registration-procedure .reg-button-box {
         display: flex;
         flex-direction: column;
-        margin-top: 1%;
-        padding-top: 10px;
     }
-    .motion-char-section .sms-mi-reg p a{
+    .motion-char .registration-procedure .reg-button-box a{
+        justify-content: left;
+        width: 100%;
+        padding: 5%;
+        margin-left: 0%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+    .motion-char .registration-procedure .reg-text-box iframe{
+        display: none;
+    }
+}
+/* ------- Motion Page: Motion Characterization - Thresholding ------- */
+.motion-char .thresholding {
+    padding-top: 4%;
+}
+.motion-char .thresholding h4{
+    font-weight: normal;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+.motion-char .thresholding p{
+    margin-top: 2%;
+}
+.motion-char .thresholding a{
+    text-decoration: none;
+}
+.motion-char .thresholding .thresholding-non-text{
+    display: flex;
+    flex-direction: column;   /* image on top, button below */
+    width: 55%;
+    float: right;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 5%;
+}
+.motion-char .thresholding .thresholding-non-text img{
+    width: 100%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding-bottom: 2%;
+}
+.motion-char .thresholding .thresholding-non-text .thresholding-button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.motion-char .thresholding .thresholding-non-text .thresholding-button a{
+    color: black;
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 50%;
+    margin-top: -3%;
+}
+.motion-char .thresholding .thresholding-non-text:hover img{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.motion-char .thresholding .thresholding-non-text:hover .thresholding-button a{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    transition: 0s;
+    border-color: white;
+}
+@media(max-width: 700px){
+    .motion-char .thresholding .thresholding-non-text{
         width: 100%;
         margin: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
-    .motion-char-section .sms-mi-reg img {
-        display: none;
+    .motion-char .thresholding .thresholding-non-text .thresholding-button a{
+        width: 80%;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
-    .motion-char-section .graph{
-        display: flex;
-        flex-direction: column;
-    }
-    .motion-char-section .graph .graph-bg{
-        display: none;
-    }
-    .motion-char-section .graph p{
-        padding: 10px;
-        text-align: left;
+    .motion-char .thresholding p{
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 0%;
     }
 }
-.motion-corr-section h3{
-    font-size: 25px;
-    text-align: center;
+/* ------- Motion Page: Motion Correction ------- */
+.motion-corr {
     margin-top: 5%;
+    display: flex;
+    flex-direction: column;
 }
-.motion-corr-section p{
+.motion-corr h3{
     text-align: center;
+    padding-bottom: 1%;
+    font-size: 30px;
+    width: 100%;
+}
+.motion-corr img{
+    width: 70%;
+    padding: 1%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: 2%;
+
+    
+}
+.motion-corr .motion-corr-text p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.motion-corr .motion-corr-citations{
+    border-radius: 8px;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    border: 1px solid black;
+    padding: 2%;
+   
+}
+.motion-corr .motion-corr-citations h5{
+    font-size: 20px;
+    margin-bottom: 4%;
+    margin-top: 1%;
+}
+.motion-corr .motion-corr-citations p{
+    margin: auto;
+    padding-bottom: 2%;
+    
 }
 /* ------- Undergraduate Page ------- */
 .undergrad-sub-header{
