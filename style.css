@@ -1391,13 +1391,15 @@ p{
         display: flex;
         flex-direction: column;
         padding-left: 0px;
-        padding-right: 7px;
+        padding-right: 0px;
+        width: 90%;
     }
     .features .attention-tasks .attention-task-column{
         display: flex;
         flex-direction: column;
         padding-left: 0px;
         padding-right: 0px;
+        
     }
     .features .registration{
         padding: 0px;
