@@ -338,7 +338,6 @@ p{
     }
     .text-box{
         width: 100%;
-        padding-top: 60%;
     }
     .text-box h2{
         font-size: 25px;
@@ -2443,5 +2442,50 @@ p{
     }
     .ug-project2 .proj2-row2 img{
         width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    nav {
+        position: relative;
+        z-index: 1000;
+    }
+    .header nav,
+    .sub-header nav,
+    .motion-sub-header nav,
+    .neurofeedback-sub-header nav,
+    .undergrad-sub-header nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 2% 6%;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        height: 100dvh;
+        z-index: 9999;
+        background: #959597;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links .fa-times {
+        display: block;
+    }
+
+    nav .fa-bars {
+        display: block;
     }
 }
